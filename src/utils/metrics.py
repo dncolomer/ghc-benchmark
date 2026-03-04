@@ -71,7 +71,7 @@ def calculate_linearity_score(text: str) -> float:
     for i in range(len(chunks) - 1):
         score = query_judgment_model(chunks[i], chunks[i + 1])
         scores.append(score)
-        time.sleep(0.5)
+        time.sleep(2)
     
     return float(np.mean(scores))
 
@@ -109,7 +109,7 @@ def calculate_cluster_score(text: str, linear_threshold: float = None) -> Dict:
         score = query_judgment_model(chunks[i], chunks[i + 1])
         is_linear = score >= linear_threshold
         transitions.append({"from_idx": i, "to_idx": i+1, "score": score, "is_linear": is_linear})
-        time.sleep(0.5)
+        time.sleep(2)
     
     clusters = []
     current_cluster = {"type": "linear" if transitions[0]["is_linear"] else "non_linear", "length": 1}

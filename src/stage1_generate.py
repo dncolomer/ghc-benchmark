@@ -34,9 +34,9 @@ Continue thinking out loud about this concept:"""
             llm_outputs.append(output)
             print("✓")
         else:
-            print("✗")
+            print("✗ (failed - will retry on next run)")
         
-        time.sleep(1)
+        time.sleep(3)
     
     return llm_outputs
 
@@ -65,9 +65,9 @@ def run_zero_shot_benchmark(model: str, model_name: str) -> list:
             llm_outputs.append(output)
             print("✓")
         else:
-            print("✗")
+            print("✗ (failed - will retry on next run)")
         
-        time.sleep(1)
+        time.sleep(3)
     
     return llm_outputs
 
@@ -110,6 +110,9 @@ def run_generate(models=None, reset: bool = False):
         save_samples(samples)
         
         print(f"\n  Saved {len(completion_outputs)} completion + {len(zero_shot_outputs)} zero-shot samples")
+        
+        print("  Waiting 10s before next model...")
+        time.sleep(10)
     
     print("\n" + "="*50)
     print("SAMPLE GENERATION COMPLETE")

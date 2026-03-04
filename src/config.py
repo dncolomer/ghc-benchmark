@@ -1,8 +1,16 @@
 """Configuration for GHC Benchmark."""
 
 import os
+from pathlib import Path
 
-API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
+env_file = Path(__file__).parent.parent / ".env"
+if env_file.exists():
+    for line in env_file.read_text().strip().split('\n'):
+        if line and '=' in line:
+            key, value = line.split('=', 1)
+            os.environ.setdefault(key.strip(), value.strip())
+
+API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 MODELS = [
     "google/gemini-2.0-flash-001",
