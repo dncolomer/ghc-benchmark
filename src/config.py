@@ -24,6 +24,8 @@ MODELS = [
     # Meta
     "meta-llama/llama-3.1-70b-instruct",
     "meta-llama/llama-4-maverick",
+    # xAI
+    "x-ai/grok-4",
     # Mistral
     "mistralai/mistral-7b-instruct-v0.1",
     # DeepSeek
@@ -34,10 +36,11 @@ MODELS = [
 
 NUM_QUERIES = 5
 NUM_COMPARISONS = 20
+MAX_LINEARITY_EVAL = 3  # Max generations per model to score for linearity/cluster
 SAMPLES_PER_MODEL = 3
 NUM_CHUNKS = 5
 NUM_LINEARITY_CHUNKS = 10
-LINEARITY_JUDGE_MODEL = "openai/gpt-4o-mini"
+LINEARITY_JUDGE_MODEL = "x-ai/grok-4"
 LINEARITY_THRESHOLD = 70.0
 
 TRANSCRIPT_FILE = "transcript_cleaned.txt"

@@ -120,7 +120,10 @@ def run_evaluate(models=None, reset: bool = False):
         
         all_generations = completion_outputs + zero_shot_outputs
         if all_generations:
-            linearity_result = run_linearity_benchmark(all_generations)
+            # Limit generations for linearity/cluster to speed up
+            eval_generations = all_generations[:config.MAX_LINEARITY_EVAL]
+            print(f"  Running linearity/cluster on {len(eval_generations)}/{len(all_generations)} generations...")
+            linearity_result = run_linearity_benchmark(eval_generations)
             model_results["linearly_index"] = linearity_result["linearly_index"]
             model_results["cluster_index"] = linearity_result["cluster_index"]
         
