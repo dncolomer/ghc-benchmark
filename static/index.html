@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHC Benchmark - Genuine Human Cognition Score</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a25;
+            --text-primary: #e8e8ed;
+            --text-secondary: #a0a0b0;
+            --accent-cyan: #00d4ff;
+            --accent-magenta: #ff00aa;
+            --accent-lime: #b4ff39;
+            --accent-purple: #8b5cf6;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        header {
+            padding: 32px 0;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: var(--accent-cyan);
+            letter-spacing: 2px;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 32px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: var(--accent-cyan);
+            color: var(--bg-primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--accent-cyan);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            max-width: 720px;
+        }
+        
+        /* Benchmark Cards */
+        .benchmarks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        
+        .benchmark-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px;
+            transition: border-color 0.2s;
+        }
+        
+        .benchmark-card:hover {
+            border-color: var(--accent-cyan);
+        }
+        
+        .benchmark-card h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: var(--accent-lime);
+            margin-bottom: 12px;
+        }
+        
+        .benchmark-card p {
+            font-size: 15px;
+        }
+        
+        .metric {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--accent-magenta);
+            margin-top: 12px;
+        }
+        
+        /* Code Block */
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg-secondary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: var(--accent-lime);
+        }
+        
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--text-primary);
+        }
+        
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 32px;
+        }
+        
+        .about-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px;
+        }
+        
+        .about-card h4 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: var(--accent-purple);
+        }
+        
+        /* Links */
+        .links-grid {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+        
+        .link-card {
+            display: block;
+            padding: 20px 24px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        
+        .link-card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-2px);
+        }
+        
+        .link-card span {
+            display: block;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        footer p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            h2 { font-size: 28px; }
+            .about-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">◆ GHC BENCHMARK</div>
+                <div class="nav-links">
+                    <a href="#context">Context</a>
+                    <a href="#methodology">Methodology</a>
+                    <a href="#howto">How To</a>
+                    <a href="https://github.com/dncolomer/ghc-benchmark" target="_blank">GitHub →</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Genuine Human Cognition</h1>
+            <p class="tagline">Measuring how closely AI Chain of Thought matches real human thinking patterns</p>
+            <a href="https://github.com/dncolomer/ghc-benchmark" class="cta-button" target="_blank">
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <section id="context">
+        <div class="container">
+            <h2>What's the Context?</h2>
+            <p>
+                Modern AI is overwhelmingly trained on finalized, edited, high-quality text—never on the 
+                live, uncertain, error-filled process of human discovery. This creates a fundamental gap: 
+                AI can sound polished, but it doesn't capture the raw, messy authenticity of genuine human cognition.
+            </p>
+            <p>
+                <strong>GHC (Genuine Human Cognition)</strong> is a benchmark that measures how closely 
+                AI's Chain of Thought (CoT) matches real human thinking patterns. We use recordings of 
+                actual humans working through Grover's algorithm to establish the ground truth for 
+                authentic cognition.
+            </p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h4>The Problem</h4>
+                    <p>
+                        When AI responds to user queries, it produces polished, structured outputs that 
+                        rarely reflect how humans actually think. The result: AI assistants that feel 
+                        robotic, never truly connecting with the messy, non-linear way humans process ideas.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h4>Our Solution</h4>
+                    <p>
+                        By systematically collecting and analyzing authentic human cognition—from real people 
+                        thinking out loud while solving problems—we now have the missing signal needed to 
+                        measure whether AI truly understands human thought.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology">
+        <div class="container">
+            <h2>Three Benchmarks</h2>
+            <p>
+                The GHC benchmark uses three complementary metrics to evaluate how authentically AI thinks.
+            </p>
+            
+            <div class="benchmarks-grid">
+                <div class="benchmark-card">
+                    <h4>01 / AUTHENTICITY</h4>
+                    <h3>Similarity Score</h3>
+                    <p>
+                        Uses sentence embeddings to measure how similar AI-generated thinking is to 
+                        real human transcripts. Higher scores = closer match to human patterns.
+                    </p>
+                    <span class="metric">0-100% via embedding similarity</span>
+                </div>
+                
+                <div class="benchmark-card">
+                    <h4>02 / LINEARITY</h4>
+                    <h3>Linearity Index</h3>
+                    <p>
+                        Measures how sequentially linear the thinking flows. Human thinking is fragmented 
+                        with jumps and tangents; AI tends to be overly structured.
+                    </p>
+                    <span class="metric">0-100 (higher = more linear/robotic)</span>
+                </div>
+                
+                <div class="benchmark-card">
+                    <h4>03 / CLUSTERS</h4>
+                    <h3>Cluster Score</h3>
+                    <p>
+                        Counts consecutive linear transitions. Humans have many short clusters 
+                        (fragmented thinking). LLMs have long sustained chains (>5 = LLM-like).
+                    </p>
+                    <span class="metric">0-100 (clusters >5 = robotic)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="howto">
+        <div class="container">
+            <h2>How to Run</h2>
+            
+            <h3>Installation</h3>
+            <pre><code>git clone https://github.com/dncolomer/ghc-benchmark
+cd ghc-benchmark
+pip install -r requirements.txt</code></pre>
+            
+            <h3>Running the Benchmark</h3>
+            <pre><code># Run full pipeline (generate + evaluate + report)
+python benchmark.py run --stage all
+
+# Run individual stages
+python benchmark.py run --stage generate   # Generate LLM samples
+python benchmark.py run --stage evaluate    # Run benchmarks
+python benchmark.py run --stage report       # Generate reports
+
+# With specific models
+python benchmark.py run --stage all --models "openai/gpt-4o-mini" "google/gemini-2.0-flash-001"</code></pre>
+            
+            <h3>Output</h3>
+            <p>
+                Results are saved to <code>results/scores.json</code> and visualizations to 
+                <code>results/charts/</code>. A markdown report is generated in 
+                <code>results/reports/report.md</code>.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>About Uncertain Systems</h2>
+            <p>
+                <strong>Uncertain Systems</strong> is building infrastructure for human education in an 
+                AI-driven world. Their mission: create tools that enable genuine, transparent co-evolution 
+                between humans and AI through educational accelerationism.
+            </p>
+            <p>
+                The GHC Benchmark is part of their open ecosystem dedicated to education accelerationism—believing 
+                that every tool built is a step toward a future where knowledge flows freely, where learning 
+                adapts to the learner, and where the barriers between curiosity and mastery dissolve.
+            </p>
+            
+            <div class="links-grid">
+                <a href="https://uncertain.systems" class="link-card" target="_blank">
+                    uncertain.systems
+                    <span>Main website</span>
+                </a>
+                <a href="https://github.com/dncolomer/ghc-benchmark" class="link-card" target="_blank">
+                    GitHub Repository
+                    <span>Source code & documentation</span>
+                </a>
+                <a href="https://huggingface.co/datasets/unsys/ghc" class="link-card" target="_blank">
+                    GHC Dataset
+                    <span>Human cognition dataset on HuggingFace</span>
+                </a>
+                <a href="https://openlesson.academy" class="link-card" target="_blank">
+                    openLesson
+                    <span>AI-native educational harness</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>GHC Benchmark — Built by <a href="https://uncertain.systems" target="_blank">Uncertain Systems</a></p>
+            <p>Part of the Open Educational Stack</p>
+            <p style="color: var(--text-secondary); margin-top: 16px;">
+                ◆ 2026 Uncertain Systems. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

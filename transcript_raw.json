@@ -1,0 +1,3422 @@
+[
+  {
+    "text": "if we start with a superposition that",
+    "start": 0.23,
+    "duration": 6.7
+  },
+  {
+    "text": "seated guy is zero zero zero so I'm",
+    "start": 4.14,
+    "duration": 4.65
+  },
+  {
+    "text": "gonna use three cubits zero zero zero",
+    "start": 6.93,
+    "duration": 6.78
+  },
+  {
+    "text": "and we have a superposition and now we",
+    "start": 8.79,
+    "duration": 8.67
+  },
+  {
+    "text": "apply the chromers",
+    "start": 13.71,
+    "duration": 7.5
+  },
+  {
+    "text": "amplitude amplification without the",
+    "start": 17.46,
+    "duration": 8.399
+  },
+  {
+    "text": "Oracle right so this is another layer of",
+    "start": 21.21,
+    "duration": 9.229
+  },
+  {
+    "text": "car Mart or Harvard sandwich time and",
+    "start": 25.859,
+    "duration": 8.851
+  },
+  {
+    "text": "and then we were negating we're",
+    "start": 30.439,
+    "duration": 6.941
+  },
+  {
+    "text": "sandwiching also with control nuts",
+    "start": 34.71,
+    "duration": 9.09
+  },
+  {
+    "text": "because we want to negate the so we're",
+    "start": 37.38,
+    "duration": 10.38
+  },
+  {
+    "text": "going back to the to the zero and one",
+    "start": 43.8,
+    "duration": 6.21
+  },
+  {
+    "text": "computational basis and we want to",
+    "start": 47.76,
+    "duration": 7.13
+  },
+  {
+    "text": "negate the face of the of this element",
+    "start": 50.01,
+    "duration": 8.279
+  },
+  {
+    "text": "and and because we can't we can't do",
+    "start": 54.89,
+    "duration": 7.059
+  },
+  {
+    "text": "this directly we need to do because you",
+    "start": 58.289,
+    "duration": 6.211
+  },
+  {
+    "text": "you know you would negate with control",
+    "start": 61.949,
+    "duration": 4.291
+  },
+  {
+    "text": "control set you would basically negate",
+    "start": 64.5,
+    "duration": 3.18
+  },
+  {
+    "text": "the one-one-one component so if you",
+    "start": 66.24,
+    "duration": 4.379
+  },
+  {
+    "text": "sandwich that with control or with with",
+    "start": 67.68,
+    "duration": 4.86
+  },
+  {
+    "text": "no gates no you get that effect right so",
+    "start": 70.619,
+    "duration": 5.25
+  },
+  {
+    "text": "you go here then you negate that face",
+    "start": 72.54,
+    "duration": 6.57
+  },
+  {
+    "text": "and then your uncomputable tenure here",
+    "start": 75.869,
+    "duration": 7.651
+  },
+  {
+    "text": "so what we have is all we have is the",
+    "start": 79.11,
+    "duration": 7.439
+  },
+  {
+    "text": "same superposition but totally negated",
+    "start": 83.52,
+    "duration": 11.82
+  },
+  {
+    "text": "right now I kind of so I've been in the",
+    "start": 86.549,
+    "duration": 10.591
+  },
+  {
+    "text": "past week or so I've been obsessed with",
+    "start": 95.34,
+    "duration": 4.56
+  },
+  {
+    "text": "the completed application because I'm",
+    "start": 97.14,
+    "duration": 5.67
+  },
+  {
+    "text": "because I'm trying to find a intuitive",
+    "start": 99.9,
+    "duration": 6.329
+  },
+  {
+    "text": "way to explain what's how are the",
+    "start": 102.81,
+    "duration": 5.849
+  },
+  {
+    "text": "effects playing out without going",
+    "start": 106.229,
+    "duration": 6.6
+  },
+  {
+    "text": "through the geometrical interpretation",
+    "start": 108.659,
+    "duration": 7.861
+  },
+  {
+    "text": "which is neat and nice but it's I still",
+    "start": 112.829,
+    "duration": 7.561
+  },
+  {
+    "text": "find it for my taste to be too far away",
+    "start": 116.52,
+    "duration": 8.34
+  },
+  {
+    "text": "from the actual circuit rates now I've",
+    "start": 120.39,
+    "duration": 7.709
+  },
+  {
+    "text": "done probably on I mean have some tons",
+    "start": 124.86,
+    "duration": 3.81
+  },
+  {
+    "text": "of grover",
+    "start": 128.099,
+    "duration": 3.241
+  },
+  {
+    "text": "videos and I think I've done a couple of",
+    "start": 128.67,
+    "duration": 4.319
+  },
+  {
+    "text": "that date update to my intuition and the",
+    "start": 131.34,
+    "duration": 2.98
+  },
+  {
+    "text": "last one was",
+    "start": 132.989,
+    "duration": 3.591
+  },
+  {
+    "text": "you know where I was basically playing",
+    "start": 134.32,
+    "duration": 4.57
+  },
+  {
+    "text": "with a concept of turning destructive",
+    "start": 136.58,
+    "duration": 3.51
+  },
+  {
+    "text": "interference with constructive",
+    "start": 138.89,
+    "duration": 2.55
+  },
+  {
+    "text": "interference I was saying you know",
+    "start": 140.09,
+    "duration": 3.75
+  },
+  {
+    "text": "imagine you've got you know you you can",
+    "start": 141.44,
+    "duration": 4.7
+  },
+  {
+    "text": "see you've got this superposition and",
+    "start": 143.84,
+    "duration": 5.37
+  },
+  {
+    "text": "then you wanna you wanna face this one",
+    "start": 146.14,
+    "duration": 5.92
+  },
+  {
+    "text": "right and so you could imagine that you",
+    "start": 149.21,
+    "duration": 4.83
+  },
+  {
+    "text": "know to do that you you you need to kind",
+    "start": 152.06,
+    "duration": 5.76
+  },
+  {
+    "text": "of add you know a little kind of add a",
+    "start": 154.04,
+    "duration": 5.52
+  },
+  {
+    "text": "couple of these negative elements in",
+    "start": 157.82,
+    "duration": 4.5
+  },
+  {
+    "text": "here so so you know so these would then",
+    "start": 159.56,
+    "duration": 5.63
+  },
+  {
+    "text": "cancel out then you you get your result",
+    "start": 162.32,
+    "duration": 8.01
+  },
+  {
+    "text": "and if you take a look at these portion",
+    "start": 165.19,
+    "duration": 7.21
+  },
+  {
+    "text": "of the algorithm it really just flips",
+    "start": 170.33,
+    "duration": 5.25
+  },
+  {
+    "text": "the sign off of that superposition so",
+    "start": 172.4,
+    "duration": 7.8
+  },
+  {
+    "text": "you know after these you have basically",
+    "start": 175.58,
+    "duration": 7.29
+  },
+  {
+    "text": "all these are minuses but now what used",
+    "start": 180.2,
+    "duration": 4.47
+  },
+  {
+    "text": "to be destructive interference for you",
+    "start": 182.87,
+    "duration": 4.02
+  },
+  {
+    "text": "here it's constructive because you've",
+    "start": 184.67,
+    "duration": 5.61
+  },
+  {
+    "text": "got like you've got like a - a - in a -",
+    "start": 186.89,
+    "duration": 7.44
+  },
+  {
+    "text": "so this kind of has this pattern of you",
+    "start": 190.28,
+    "duration": 8.959
+  },
+  {
+    "text": "know being amplified but that's not I",
+    "start": 194.33,
+    "duration": 7.379
+  },
+  {
+    "text": "feel that that needs to be revisited",
+    "start": 199.239,
+    "duration": 7.421
+  },
+  {
+    "text": "that's not doesn't feel mmm it doesn't",
+    "start": 201.709,
+    "duration": 8.341
+  },
+  {
+    "text": "feel good enough and it feels also a bit",
+    "start": 206.66,
+    "duration": 6.48
+  },
+  {
+    "text": "far away from from what really happens",
+    "start": 210.05,
+    "duration": 6.54
+  },
+  {
+    "text": "in reality it's kind of a good tool but",
+    "start": 213.14,
+    "duration": 4.59
+  },
+  {
+    "text": "I when I was playing with these I",
+    "start": 216.59,
+    "duration": 3.39
+  },
+  {
+    "text": "realized that you know that's why I",
+    "start": 217.73,
+    "duration": 4.5
+  },
+  {
+    "text": "titled I probably gonna title this this",
+    "start": 219.98,
+    "duration": 4.08
+  },
+  {
+    "text": "video like I broke Kroger's algorithm or",
+    "start": 222.23,
+    "duration": 3.27
+  },
+  {
+    "text": "something I realized that the situation",
+    "start": 224.06,
+    "duration": 4.2
+  },
+  {
+    "text": "works well but it doesn't work well for",
+    "start": 225.5,
+    "duration": 6.78
+  },
+  {
+    "text": "everything because let me start let me",
+    "start": 228.26,
+    "duration": 6.24
+  },
+  {
+    "text": "start over here so if I have this",
+    "start": 232.28,
+    "duration": 5.94
+  },
+  {
+    "text": "preposition right that I just painted so",
+    "start": 234.5,
+    "duration": 10.17
+  },
+  {
+    "text": "let's say 0 0 1 1 0 1 1 and now what I",
+    "start": 238.22,
+    "duration": 14.85
+  },
+  {
+    "text": "want to have is for example a III I",
+    "start": 244.67,
+    "duration": 12.15
+  },
+  {
+    "text": "wanna I wanna find this element this",
+    "start": 253.07,
+    "duration": 7.61
+  },
+  {
+    "text": "element and this element right so",
+    "start": 256.82,
+    "duration": 8.34
+  },
+  {
+    "text": "Grover's algorithm no listen",
+    "start": 260.68,
+    "duration": 7.03
+  },
+  {
+    "text": "it's even even worse just these two",
+    "start": 265.16,
+    "duration": 5.16
+  },
+  {
+    "text": "elements the Gerber's algorithm doesn't",
+    "start": 267.71,
+    "duration": 7.65
+  },
+  {
+    "text": "work anymore and that just I was like",
+    "start": 270.32,
+    "duration": 8.85
+  },
+  {
+    "text": "what I mean if I keep using my intuition",
+    "start": 275.36,
+    "duration": 6.72
+  },
+  {
+    "text": "here the tool it should work rankest",
+    "start": 279.17,
+    "duration": 5.55
+  },
+  {
+    "text": "you're just adding a couple of these",
+    "start": 282.08,
+    "duration": 4.38
+  },
+  {
+    "text": "you're adding up and another bunch of",
+    "start": 284.72,
+    "duration": 4.38
+  },
+  {
+    "text": "this and then you're you're doing the",
+    "start": 286.46,
+    "duration": 5.51
+  },
+  {
+    "text": "the negation here and so you've got like",
+    "start": 289.1,
+    "duration": 8.94
+  },
+  {
+    "text": "two amplification effects but if I if I",
+    "start": 291.97,
+    "duration": 10.15
+  },
+  {
+    "text": "start just have the two cubed version",
+    "start": 298.04,
+    "duration": 9.36
+  },
+  {
+    "text": "here right and now I do so now you've",
+    "start": 302.12,
+    "duration": 8.39
+  },
+  {
+    "text": "got these and now I will let's say",
+    "start": 307.4,
+    "duration": 5.88
+  },
+  {
+    "text": "negate the amplitudes of these two right",
+    "start": 310.51,
+    "duration": 7.53
+  },
+  {
+    "text": "so and now I applied chorus algorithm",
+    "start": 313.28,
+    "duration": 9.78
+  },
+  {
+    "text": "amplitude amplification and we see that",
+    "start": 318.04,
+    "duration": 7.44
+  },
+  {
+    "text": "really nicely",
+    "start": 323.06,
+    "duration": 5.1
+  },
+  {
+    "text": "it just doesn't work what's more it's",
+    "start": 325.48,
+    "duration": 5.17
+  },
+  {
+    "text": "not that it doesn't work it's just it",
+    "start": 328.16,
+    "duration": 6.89
+  },
+  {
+    "text": "just leaves us it was exactly the same",
+    "start": 330.65,
+    "duration": 7.77
+  },
+  {
+    "text": "with exactly the same superposition no",
+    "start": 335.05,
+    "duration": 7.96
+  },
+  {
+    "text": "sorry not this one with the exact same",
+    "start": 338.42,
+    "duration": 13.59
+  },
+  {
+    "text": "one after after facing so and this took",
+    "start": 343.01,
+    "duration": 12.54
+  },
+  {
+    "text": "me to basically start this video because",
+    "start": 352.01,
+    "duration": 7.59
+  },
+  {
+    "text": "I want to basically open up so I want to",
+    "start": 355.55,
+    "duration": 7.11
+  },
+  {
+    "text": "take a look at I'm trying to revisit",
+    "start": 359.6,
+    "duration": 5.52
+  },
+  {
+    "text": "these and so this is a bit of a current",
+    "start": 362.66,
+    "duration": 4.02
+  },
+  {
+    "text": "a brain dump of my car mental process",
+    "start": 365.12,
+    "duration": 3.48
+  },
+  {
+    "text": "because I've been doing a lot of record",
+    "start": 366.68,
+    "duration": 3.12
+  },
+  {
+    "text": "I've been doing sort of a lot of",
+    "start": 368.6,
+    "duration": 3.24
+  },
+  {
+    "text": "thinking without actually putting in the",
+    "start": 369.8,
+    "duration": 4.35
+  },
+  {
+    "text": "video and I don't kind of like that so I",
+    "start": 371.84,
+    "duration": 4.26
+  },
+  {
+    "text": "just you know thought I dropped this",
+    "start": 374.15,
+    "duration": 7.2
+  },
+  {
+    "text": "video and what's more there's another",
+    "start": 376.1,
+    "duration": 12.18
+  },
+  {
+    "text": "case so the this happens for if this",
+    "start": 381.35,
+    "duration": 9.75
+  },
+  {
+    "text": "happens regardless of what elements you",
+    "start": 388.28,
+    "duration": 5.46
+  },
+  {
+    "text": "face as long as you face half of the",
+    "start": 391.1,
+    "duration": 4.98
+  },
+  {
+    "text": "elements exactly half of the elements of",
+    "start": 393.74,
+    "duration": 3.48
+  },
+  {
+    "text": "your superposition",
+    "start": 396.08,
+    "duration": 6.309
+  },
+  {
+    "text": "then Grover algorithm doesn't work this",
+    "start": 397.22,
+    "duration": 7.12
+  },
+  {
+    "text": "doesn't work this doesn't work even if I",
+    "start": 402.389,
+    "duration": 5.551
+  },
+  {
+    "text": "would you know do something like this",
+    "start": 404.34,
+    "duration": 8.549
+  },
+  {
+    "text": "doesn't work or even if I would say I",
+    "start": 407.94,
+    "duration": 11.039
+  },
+  {
+    "text": "wanna face 1 1 & 0 0 this also doesn't",
+    "start": 412.889,
+    "duration": 8.911
+  },
+  {
+    "text": "work right and and the pattern is the",
+    "start": 418.979,
+    "duration": 6.69
+  },
+  {
+    "text": "same this stays the same like this mmm",
+    "start": 421.8,
+    "duration": 5.25
+  },
+  {
+    "text": "it doesn't matter how many iterations",
+    "start": 425.669,
+    "duration": 11.161
+  },
+  {
+    "text": "you do so um and good so how could I",
+    "start": 427.05,
+    "duration": 11.67
+  },
+  {
+    "text": "move from here my my current thought",
+    "start": 436.83,
+    "duration": 4.399
+  },
+  {
+    "text": "process is an improving a little bit",
+    "start": 438.72,
+    "duration": 5.91
+  },
+  {
+    "text": "this part here and so basically trying",
+    "start": 441.229,
+    "duration": 9.22
+  },
+  {
+    "text": "to kind of think about each of the steps",
+    "start": 444.63,
+    "duration": 9.98
+  },
+  {
+    "text": "here right and I'm gonna consider these",
+    "start": 450.449,
+    "duration": 7.681
+  },
+  {
+    "text": "being one single step this is the sort",
+    "start": 454.61,
+    "duration": 9.779
+  },
+  {
+    "text": "of it's it's the phase negation operator",
+    "start": 458.13,
+    "duration": 15.87
+  },
+  {
+    "text": "right so if I work so if I've got um say",
+    "start": 464.389,
+    "duration": 15.011
+  },
+  {
+    "text": "an initial state for example 1 0 0 and I",
+    "start": 474.0,
+    "duration": 15.03
+  },
+  {
+    "text": "apply a and if I apply these right so",
+    "start": 479.4,
+    "duration": 11.73
+  },
+  {
+    "text": "this particular pattern in here which is",
+    "start": 489.03,
+    "duration": 6.629
+  },
+  {
+    "text": "kind of a 0 0 1 right if you want to see",
+    "start": 491.13,
+    "duration": 7.159
+  },
+  {
+    "text": "this way because that's an anti control",
+    "start": 495.659,
+    "duration": 6.901
+  },
+  {
+    "text": "if that matches my state then what you",
+    "start": 498.289,
+    "duration": 6.91
+  },
+  {
+    "text": "get is your you get the phase negated",
+    "start": 502.56,
+    "duration": 9.899
+  },
+  {
+    "text": "right and so the the amplitude",
+    "start": 505.199,
+    "duration": 9.09
+  },
+  {
+    "text": "amplification is nothing else than the",
+    "start": 512.459,
+    "duration": 5.731
+  },
+  {
+    "text": "same concept but in the plus minus",
+    "start": 514.289,
+    "duration": 8.331
+  },
+  {
+    "text": "phases so",
+    "start": 518.19,
+    "duration": 4.43
+  },
+  {
+    "text": "show you tease let's assume that we have",
+    "start": 522.79,
+    "duration": 12.72
+  },
+  {
+    "text": "a an initial state which is the plus",
+    "start": 528.56,
+    "duration": 12.6
+  },
+  {
+    "text": "plus plus state right so we've got the",
+    "start": 535.51,
+    "duration": 9.13
+  },
+  {
+    "text": "boxer's and now I apply so that would be",
+    "start": 541.16,
+    "duration": 5.25
+  },
+  {
+    "text": "the code into the zero zero zero right",
+    "start": 544.64,
+    "duration": 5.34
+  },
+  {
+    "text": "or let's write the let's say plus plus",
+    "start": 546.41,
+    "duration": 5.37
+  },
+  {
+    "text": "minus to just use the same example so",
+    "start": 549.98,
+    "duration": 3.57
+  },
+  {
+    "text": "I'll be the equivalent of the ones here",
+    "start": 551.78,
+    "duration": 8.43
+  },
+  {
+    "text": "is your case but with the with the plus",
+    "start": 553.55,
+    "duration": 9.24
+  },
+  {
+    "text": "minus basis so so this is the how the",
+    "start": 560.21,
+    "duration": 5.46
+  },
+  {
+    "text": "amplitudes and the faces look like for",
+    "start": 562.79,
+    "duration": 5.64
+  },
+  {
+    "text": "now I apply the same that I showed you",
+    "start": 565.67,
+    "duration": 7.44
+  },
+  {
+    "text": "by but so the same so I use is in same",
+    "start": 568.43,
+    "duration": 6.63
+  },
+  {
+    "text": "on the same but applied but sandwiches",
+    "start": 573.11,
+    "duration": 5.64
+  },
+  {
+    "text": "with harm Arts right so what was it was",
+    "start": 575.06,
+    "duration": 5.82
+  },
+  {
+    "text": "sent no wasn't into control and then",
+    "start": 578.75,
+    "duration": 5.01
+  },
+  {
+    "text": "take control so it I've applied the same",
+    "start": 580.88,
+    "duration": 4.53
+  },
+  {
+    "text": "it just sandwich they would harm arts",
+    "start": 583.76,
+    "duration": 5.73
+  },
+  {
+    "text": "right Payton should that what you've got",
+    "start": 585.41,
+    "duration": 6.66
+  },
+  {
+    "text": "in here and you've got here is exactly",
+    "start": 589.49,
+    "duration": 5.16
+  },
+  {
+    "text": "the same but with a face of hundred",
+    "start": 592.07,
+    "duration": 4.83
+  },
+  {
+    "text": "eighty degrees I'd like to the whole",
+    "start": 594.65,
+    "duration": 9.3
+  },
+  {
+    "text": "superposition so this has literally this",
+    "start": 596.9,
+    "duration": 12.3
+  },
+  {
+    "text": "is literally taken the I mean step by",
+    "start": 603.95,
+    "duration": 7.85
+  },
+  {
+    "text": "step what this does is it goes back to",
+    "start": 609.2,
+    "duration": 5.69
+  },
+  {
+    "text": "it goes back to the computational basis",
+    "start": 611.8,
+    "duration": 6.31
+  },
+  {
+    "text": "right where you have the seat of that",
+    "start": 614.89,
+    "duration": 5.02
+  },
+  {
+    "text": "super position then it negates the seed",
+    "start": 618.11,
+    "duration": 5.25
+  },
+  {
+    "text": "and then it applies the later farmers",
+    "start": 619.91,
+    "duration": 5.87
+  },
+  {
+    "text": "again so you're you're ending up with a",
+    "start": 623.36,
+    "duration": 7.37
+  },
+  {
+    "text": "position that has the opposite phase and",
+    "start": 625.78,
+    "duration": 11.29
+  },
+  {
+    "text": "I think thesis I think this is a really",
+    "start": 630.73,
+    "duration": 9.79
+  },
+  {
+    "text": "good intuition does it is a sort of a",
+    "start": 637.07,
+    "duration": 6.96
+  },
+  {
+    "text": "really good way to break you down let",
+    "start": 640.52,
+    "duration": 6.69
+  },
+  {
+    "text": "help me that is helping me to more and",
+    "start": 644.03,
+    "duration": 8.33
+  },
+  {
+    "text": "more get close to a final version of",
+    "start": 647.21,
+    "duration": 7.71
+  },
+  {
+    "text": "what is really growers algorithm doing",
+    "start": 652.36,
+    "duration": 3.76
+  },
+  {
+    "text": "without any terms",
+    "start": 654.92,
+    "duration": 4.38
+  },
+  {
+    "text": "interpretation and whatnot um which",
+    "start": 656.12,
+    "duration": 5.1
+  },
+  {
+    "text": "again it's not that it's wrong it's that",
+    "start": 659.3,
+    "duration": 6.12
+  },
+  {
+    "text": "I mean just not it's the I just don't",
+    "start": 661.22,
+    "duration": 8.16
+  },
+  {
+    "text": "feel comfortable with it and so what",
+    "start": 665.42,
+    "duration": 8.18
+  },
+  {
+    "text": "happens when you what happens when you",
+    "start": 669.38,
+    "duration": 4.22
+  },
+  {
+    "text": "what happens when you step in between",
+    "start": 674.26,
+    "duration": 6.28
+  },
+  {
+    "text": "and basically saying now before I apply",
+    "start": 676.97,
+    "duration": 7.86
+  },
+  {
+    "text": "that phasing operator right let's call",
+    "start": 680.54,
+    "duration": 4.95
+  },
+  {
+    "text": "it this way",
+    "start": 684.83,
+    "duration": 5.25
+  },
+  {
+    "text": "that's phasing operator which um by the",
+    "start": 685.49,
+    "duration": 8.22
+  },
+  {
+    "text": "way with queer can be expressed by using",
+    "start": 690.08,
+    "duration": 8.37
+  },
+  {
+    "text": "the x axis controls right so in this",
+    "start": 693.71,
+    "duration": 12.66
+  },
+  {
+    "text": "case this would be a minus so this would",
+    "start": 698.45,
+    "duration": 9.57
+  },
+  {
+    "text": "be the this control which is which",
+    "start": 706.37,
+    "duration": 4.49
+  },
+  {
+    "text": "controls on the cube being on + off and",
+    "start": 708.02,
+    "duration": 6.36
+  },
+  {
+    "text": "then an X game right so that that that",
+    "start": 710.86,
+    "duration": 4.99
+  },
+  {
+    "text": "basically you take a look at the",
+    "start": 714.38,
+    "duration": 4.86
+  },
+  {
+    "text": "amplitudes here that's exactly the",
+    "start": 715.85,
+    "duration": 6.71
+  },
+  {
+    "text": "effect I would that I just described",
+    "start": 719.24,
+    "duration": 3.32
+  },
+  {
+    "text": "it's just I'm it Tara takes where I like",
+    "start": 722.589,
+    "duration": 4.061
+  },
+  {
+    "text": "either this way I don't like it because",
+    "start": 725.45,
+    "duration": 3.259
+  },
+  {
+    "text": "it hides a harem arts and it helps me",
+    "start": 726.65,
+    "duration": 3.99
+  },
+  {
+    "text": "with the harm or as it helps me",
+    "start": 728.709,
+    "duration": 4.031
+  },
+  {
+    "text": "understand that be more that without the",
+    "start": 730.64,
+    "duration": 3.48
+  },
+  {
+    "text": "harem artists it just looks more compact",
+    "start": 732.74,
+    "duration": 2.789
+  },
+  {
+    "text": "and it's nice as well it's a nice way to",
+    "start": 734.12,
+    "duration": 5.37
+  },
+  {
+    "text": "see bees this way the problem is so the",
+    "start": 735.529,
+    "duration": 7.491
+  },
+  {
+    "text": "interesting part comes in now when I",
+    "start": 739.49,
+    "duration": 3.53
+  },
+  {
+    "text": "let's say that we're let's let's get rid",
+    "start": 744.25,
+    "duration": 6.49
+  },
+  {
+    "text": "of this so here so it's fine here we've",
+    "start": 747.8,
+    "duration": 4.68
+  },
+  {
+    "text": "got like a zero zero zero right and",
+    "start": 750.74,
+    "duration": 3.36
+  },
+  {
+    "text": "that's that's our position",
+    "start": 752.48,
+    "duration": 8.21
+  },
+  {
+    "text": "so exactly and now we're going to face",
+    "start": 754.1,
+    "duration": 10.59
+  },
+  {
+    "text": "one element right let's say I'm gonna",
+    "start": 760.69,
+    "duration": 10.839
+  },
+  {
+    "text": "face the one on one for example so I",
+    "start": 764.69,
+    "duration": 8.46
+  },
+  {
+    "text": "want to face one one one just one",
+    "start": 771.529,
+    "duration": 3.331
+  },
+  {
+    "text": "element right so that's what you get",
+    "start": 773.15,
+    "duration": 3.45
+  },
+  {
+    "text": "here is to get the same sort of position",
+    "start": 774.86,
+    "duration": 5.88
+  },
+  {
+    "text": "but this element has been faced um when",
+    "start": 776.6,
+    "duration": 8.04
+  },
+  {
+    "text": "when now we we go through the upper",
+    "start": 780.74,
+    "duration": 5.91
+  },
+  {
+    "text": "temptation step-by-step so now we",
+    "start": 784.64,
+    "duration": 5.42
+  },
+  {
+    "text": "realize that you're no longer",
+    "start": 786.65,
+    "duration": 3.41
+  },
+  {
+    "text": "you're you don't you don't have any more",
+    "start": 790.12,
+    "duration": 5.35
+  },
+  {
+    "text": "the original seat right because you've",
+    "start": 793.46,
+    "duration": 3.96
+  },
+  {
+    "text": "definitely changed you've changed",
+    "start": 795.47,
+    "duration": 5.1
+  },
+  {
+    "text": "something so you can't if you think",
+    "start": 797.42,
+    "duration": 5.61
+  },
+  {
+    "text": "about the heart the first time a layer",
+    "start": 800.57,
+    "duration": 5.94
+  },
+  {
+    "text": "has basically come back to yours the",
+    "start": 803.03,
+    "duration": 5.01
+  },
+  {
+    "text": "seat of your super position is not the",
+    "start": 806.51,
+    "duration": 4.62
+  },
+  {
+    "text": "same because you've changed it now what",
+    "start": 808.04,
+    "duration": 11.16
+  },
+  {
+    "text": "I have realized is that for every single",
+    "start": 811.13,
+    "duration": 10.11
+  },
+  {
+    "text": "possible super position that you can",
+    "start": 819.2,
+    "duration": 5.36
+  },
+  {
+    "text": "create with say three cubits right",
+    "start": 821.24,
+    "duration": 5.64
+  },
+  {
+    "text": "that's about eight different",
+    "start": 824.56,
+    "duration": 4.66
+  },
+  {
+    "text": "propositions and that you can create",
+    "start": 826.88,
+    "duration": 4.23
+  },
+  {
+    "text": "with a horror mark like a clean heart",
+    "start": 829.22,
+    "duration": 2.46
+  },
+  {
+    "text": "more layer",
+    "start": 831.11,
+    "duration": 5.16
+  },
+  {
+    "text": "they are always gonna have half of their",
+    "start": 831.68,
+    "duration": 7.65
+  },
+  {
+    "text": "elements with a negative phase with the",
+    "start": 836.27,
+    "duration": 4.29
+  },
+  {
+    "text": "exception of the zero zero zero so",
+    "start": 839.33,
+    "duration": 3.9
+  },
+  {
+    "text": "that's the only one so if I go to the -",
+    "start": 840.56,
+    "duration": 6.51
+  },
+  {
+    "text": "- - you see you've got like one two",
+    "start": 843.23,
+    "duration": 7.14
+  },
+  {
+    "text": "three four elements every you go to",
+    "start": 847.07,
+    "duration": 7.58
+  },
+  {
+    "text": "doesn't matter this one here right",
+    "start": 850.37,
+    "duration": 10.05
+  },
+  {
+    "text": "you've got one two three and four this",
+    "start": 854.65,
+    "duration": 7.96
+  },
+  {
+    "text": "it's all it's always like these four for",
+    "start": 860.42,
+    "duration": 3.72
+  },
+  {
+    "text": "all the different types of super",
+    "start": 862.61,
+    "duration": 3.24
+  },
+  {
+    "text": "positions and that is actually the",
+    "start": 864.14,
+    "duration": 3.99
+  },
+  {
+    "text": "reason that's actually the reason why",
+    "start": 865.85,
+    "duration": 3.9
+  },
+  {
+    "text": "Grover's algorithm doesn't work because",
+    "start": 868.13,
+    "duration": 5.97
+  },
+  {
+    "text": "you're you're basically these this",
+    "start": 869.75,
+    "duration": 6.81
+  },
+  {
+    "text": "amplitude amplification is actually not",
+    "start": 874.1,
+    "duration": 5.49
+  },
+  {
+    "text": "it's not a generic thing right it's not",
+    "start": 876.56,
+    "duration": 4.38
+  },
+  {
+    "text": "something you can just use out of the",
+    "start": 879.59,
+    "duration": 4.23
+  },
+  {
+    "text": "box it it is really depend it's really",
+    "start": 880.94,
+    "duration": 6.72
+  },
+  {
+    "text": "dependent on on your initial initial",
+    "start": 883.82,
+    "duration": 9.02
+  },
+  {
+    "text": "seed initial stain if if you're",
+    "start": 887.66,
+    "duration": 8.96
+  },
+  {
+    "text": "especially if you're superposition is",
+    "start": 892.84,
+    "duration": 7.33
+  },
+  {
+    "text": "you know if you start with a - plus -",
+    "start": 896.62,
+    "duration": 9.16
+  },
+  {
+    "text": "right the the the part in here for this",
+    "start": 900.17,
+    "duration": 9.54
+  },
+  {
+    "text": "to work should also be basically about",
+    "start": 905.78,
+    "duration": 8.42
+  },
+  {
+    "text": "matching that so you should have these",
+    "start": 909.71,
+    "duration": 4.49
+  },
+  {
+    "text": "this is correct sorry I think that's not",
+    "start": 916.529,
+    "duration": 8.23
+  },
+  {
+    "text": "what I meant",
+    "start": 924.16,
+    "duration": 3.33
+  },
+  {
+    "text": "so let me because that's not the way",
+    "start": 924.759,
+    "duration": 4.92
+  },
+  {
+    "text": "this proposition works so if the seat is",
+    "start": 927.49,
+    "duration": 4.86
+  },
+  {
+    "text": "0 1 0 and then and then you create this",
+    "start": 929.679,
+    "duration": 5.66
+  },
+  {
+    "text": "for position exactly",
+    "start": 932.35,
+    "duration": 2.989
+  },
+  {
+    "text": "no that should work though it doesn't",
+    "start": 937.589,
+    "duration": 8.53
+  },
+  {
+    "text": "this work",
+    "start": 945.249,
+    "duration": 9.661
+  },
+  {
+    "text": "oh sorry I haven't faced anything no it",
+    "start": 946.119,
+    "duration": 9.481
+  },
+  {
+    "text": "actually works",
+    "start": 954.91,
+    "duration": 3.869
+  },
+  {
+    "text": "yeah it actually works so you've got",
+    "start": 955.6,
+    "duration": 4.859
+  },
+  {
+    "text": "these and these are our face I was",
+    "start": 958.779,
+    "duration": 5.49
+  },
+  {
+    "text": "thinking about I don't see any I don't",
+    "start": 960.459,
+    "duration": 5.641
+  },
+  {
+    "text": "see any amplification buts because we",
+    "start": 964.269,
+    "duration": 3.99
+  },
+  {
+    "text": "haven't really faced anything in here",
+    "start": 966.1,
+    "duration": 4.2
+  },
+  {
+    "text": "but you see the rewards because it flips",
+    "start": 968.259,
+    "duration": 6.02
+  },
+  {
+    "text": "the sign if as soon as you change that",
+    "start": 970.3,
+    "duration": 7.319
+  },
+  {
+    "text": "you see that there's no actual flipping",
+    "start": 974.279,
+    "duration": 8.201
+  },
+  {
+    "text": "and the reason is that um the reason is",
+    "start": 977.619,
+    "duration": 9.66
+  },
+  {
+    "text": "that lets say that you start with a zero",
+    "start": 982.48,
+    "duration": 7.799
+  },
+  {
+    "text": "zero zero right and then you face for",
+    "start": 987.279,
+    "duration": 7.831
+  },
+  {
+    "text": "example these right actually now what's",
+    "start": 990.279,
+    "duration": 7.05
+  },
+  {
+    "text": "happened is that your seat has",
+    "start": 995.11,
+    "duration": 4.05
+  },
+  {
+    "text": "completely changed all right so now you",
+    "start": 997.329,
+    "duration": 3.87
+  },
+  {
+    "text": "see these one zero zero",
+    "start": 999.16,
+    "duration": 5.149
+  },
+  {
+    "text": "um and so that doesn't match anymore",
+    "start": 1001.199,
+    "duration": 6.57
+  },
+  {
+    "text": "with these and so this is not gonna act",
+    "start": 1004.309,
+    "duration": 10.9
+  },
+  {
+    "text": "on anything because the sorry messing",
+    "start": 1007.769,
+    "duration": 12.42
+  },
+  {
+    "text": "around so if I want this to much my",
+    "start": 1015.209,
+    "duration": 9.33
+  },
+  {
+    "text": "explanation after this way so this is",
+    "start": 1020.189,
+    "duration": 6.39
+  },
+  {
+    "text": "not now matching this anymore because",
+    "start": 1024.539,
+    "duration": 6.39
+  },
+  {
+    "text": "you know well I've got like a zero zero",
+    "start": 1026.579,
+    "duration": 6.98
+  },
+  {
+    "text": "zero and he says this is a negation of",
+    "start": 1030.929,
+    "duration": 6.99
+  },
+  {
+    "text": "after 0 0 0 state and but now I've got",
+    "start": 1033.559,
+    "duration": 5.921
+  },
+  {
+    "text": "this seat into 0 zero since there is",
+    "start": 1037.919,
+    "duration": 3.39
+  },
+  {
+    "text": "empty here so this is not gonna have any",
+    "start": 1039.48,
+    "duration": 4.77
+  },
+  {
+    "text": "effect and if I move this display or if",
+    "start": 1041.309,
+    "duration": 4.931
+  },
+  {
+    "text": "I explain here you'll",
+    "start": 1044.25,
+    "duration": 3.88
+  },
+  {
+    "text": "that it's just stays the same right and",
+    "start": 1046.24,
+    "duration": 3.299
+  },
+  {
+    "text": "then when I move it on the other side I",
+    "start": 1048.13,
+    "duration": 3.149
+  },
+  {
+    "text": "mean we can see it here so that's the",
+    "start": 1049.539,
+    "duration": 5.731
+  },
+  {
+    "text": "reason it doesn't work what's more",
+    "start": 1051.279,
+    "duration": 11.9
+  },
+  {
+    "text": "interesting is that if you if you flag",
+    "start": 1055.27,
+    "duration": 10.5
+  },
+  {
+    "text": "more than a half the elements then you",
+    "start": 1063.179,
+    "duration": 4.661
+  },
+  {
+    "text": "the amplitude amplification is gonna",
+    "start": 1065.77,
+    "duration": 4.71
+  },
+  {
+    "text": "work the other way around so is gonna",
+    "start": 1067.84,
+    "duration": 4.68
+  },
+  {
+    "text": "amplify the elements that you haven't",
+    "start": 1070.48,
+    "duration": 4.89
+  },
+  {
+    "text": "flanked let's say that to these I now if",
+    "start": 1072.52,
+    "duration": 6.21
+  },
+  {
+    "text": "like the safe reason for this 1 0 0 1",
+    "start": 1075.37,
+    "duration": 17.01
+  },
+  {
+    "text": "right so 0 alright so now I've got what",
+    "start": 1078.73,
+    "duration": 23.03
+  },
+  {
+    "text": "have I got now here I fly 1 2 3",
+    "start": 1092.38,
+    "duration": 9.38
+  },
+  {
+    "text": "sorry this is this way",
+    "start": 1103.59,
+    "duration": 7.24
+  },
+  {
+    "text": "exactly so I've got any one two three",
+    "start": 1106.809,
+    "duration": 6.62
+  },
+  {
+    "text": "four elements flagged five pilots fly",
+    "start": 1110.83,
+    "duration": 9.89
+  },
+  {
+    "text": "and so pay attention at the final result",
+    "start": 1113.429,
+    "duration": 10.811
+  },
+  {
+    "text": "you basically got the elements that you",
+    "start": 1120.72,
+    "duration": 4.99
+  },
+  {
+    "text": "get amplified are the ones that you need",
+    "start": 1124.24,
+    "duration": 4.08
+  },
+  {
+    "text": "in flag and so this is the third this is",
+    "start": 1125.71,
+    "duration": 5.839
+  },
+  {
+    "text": "sort of a the second special case that I",
+    "start": 1128.32,
+    "duration": 5.459
+  },
+  {
+    "text": "that I want to take a look at so let's",
+    "start": 1131.549,
+    "duration": 4.811
+  },
+  {
+    "text": "back up for a second so we've got two",
+    "start": 1133.779,
+    "duration": 3.961
+  },
+  {
+    "text": "things take a look at we want to take a",
+    "start": 1136.36,
+    "duration": 6.6
+  },
+  {
+    "text": "look at the is a case where the two",
+    "start": 1137.74,
+    "duration": 8.37
+  },
+  {
+    "text": "cases where my presentation fails the",
+    "start": 1142.96,
+    "duration": 5.16
+  },
+  {
+    "text": "case where you've like exactly half of",
+    "start": 1146.11,
+    "duration": 3.63
+  },
+  {
+    "text": "the of the elements of your",
+    "start": 1148.12,
+    "duration": 3.51
+  },
+  {
+    "text": "superposition think that's kind of clear",
+    "start": 1149.74,
+    "duration": 4.669
+  },
+  {
+    "text": "is it's is you're you're sort of",
+    "start": 1151.63,
+    "duration": 7.2
+  },
+  {
+    "text": "changing it seems almost like a spur",
+    "start": 1154.409,
+    "duration": 6.76
+  },
+  {
+    "text": "position is characterized by at least",
+    "start": 1158.83,
+    "duration": 7.02
+  },
+  {
+    "text": "half of its signs really um or a",
+    "start": 1161.169,
+    "duration": 6.63
+  },
+  {
+    "text": "superposition that's created with a",
+    "start": 1165.85,
+    "duration": 4.98
+  },
+  {
+    "text": "layer of harm arts at least because well",
+    "start": 1167.799,
+    "duration": 7.321
+  },
+  {
+    "text": "that is basically the way this works is",
+    "start": 1170.83,
+    "duration": 7.41
+  },
+  {
+    "text": "you know it's the particular",
+    "start": 1175.12,
+    "duration": 4.69
+  },
+  {
+    "text": "combinations of 0 & 1",
+    "start": 1178.24,
+    "duration": 5.68
+  },
+  {
+    "text": "give you the particular amount of minus",
+    "start": 1179.81,
+    "duration": 11.04
+  },
+  {
+    "text": "signs right because when you will apply",
+    "start": 1183.92,
+    "duration": 8.64
+  },
+  {
+    "text": "the Harmar to the cubit that that is in",
+    "start": 1190.85,
+    "duration": 2.91
+  },
+  {
+    "text": "the one state that's gonna create as",
+    "start": 1192.56,
+    "duration": 3.81
+  },
+  {
+    "text": "your minus ones day and so that minus",
+    "start": 1193.76,
+    "duration": 5.37
+  },
+  {
+    "text": "phase there if you've got other ones in",
+    "start": 1196.37,
+    "duration": 5.1
+  },
+  {
+    "text": "your in your three cubed state it's",
+    "start": 1199.13,
+    "duration": 5.31
+  },
+  {
+    "text": "gonna kind of cancel or you know if you",
+    "start": 1201.47,
+    "duration": 12.81
+  },
+  {
+    "text": "have if you have like a 1 1 1 right you",
+    "start": 1204.44,
+    "duration": 14.31
+  },
+  {
+    "text": "basically have you basically have a",
+    "start": 1214.28,
+    "duration": 6.39
+  },
+  {
+    "text": "minus in the states where you've got",
+    "start": 1218.75,
+    "duration": 6.36
+  },
+  {
+    "text": "either one element is a 1 and you the",
+    "start": 1220.67,
+    "duration": 8.43
+  },
+  {
+    "text": "towards eros this is this or where",
+    "start": 1225.11,
+    "duration": 6.18
+  },
+  {
+    "text": "you've got an odd number of ones right",
+    "start": 1229.1,
+    "duration": 3.84
+  },
+  {
+    "text": "because they already have an even number",
+    "start": 1231.29,
+    "duration": 3.15
+  },
+  {
+    "text": "of ones they cancel out and they become",
+    "start": 1232.94,
+    "duration": 5.61
+  },
+  {
+    "text": "plus so and that's why so that's why it",
+    "start": 1234.44,
+    "duration": 6.09
+  },
+  {
+    "text": "doesn't work so the question is you say",
+    "start": 1238.55,
+    "duration": 3.78
+  },
+  {
+    "text": "a way to change course algorithm to make",
+    "start": 1240.53,
+    "duration": 4.35
+  },
+  {
+    "text": "it work that's maybe for the next video",
+    "start": 1242.33,
+    "duration": 7.32
+  },
+  {
+    "text": "so um but let's see how let's take a",
+    "start": 1244.88,
+    "duration": 6.51
+  },
+  {
+    "text": "look a bit more idea to enough actually",
+    "start": 1249.65,
+    "duration": 3.45
+  },
+  {
+    "text": "so they said took cases where my",
+    "start": 1251.39,
+    "duration": 3.24
+  },
+  {
+    "text": "intention fails but the case in where my",
+    "start": 1253.1,
+    "duration": 4.77
+  },
+  {
+    "text": "intention works just wanna I just want",
+    "start": 1254.63,
+    "duration": 10.14
+  },
+  {
+    "text": "to go through an idea now let me get me",
+    "start": 1257.87,
+    "duration": 12.06
+  },
+  {
+    "text": "off all this place for a second so let",
+    "start": 1264.77,
+    "duration": 8.52
+  },
+  {
+    "text": "me go so maybe you know if I should fire",
+    "start": 1269.93,
+    "duration": 5.1
+  },
+  {
+    "text": "up one page can I just have a blank page",
+    "start": 1273.29,
+    "duration": 6.89
+  },
+  {
+    "text": "I have a blank page",
+    "start": 1275.03,
+    "duration": 5.15
+  },
+  {
+    "text": "prompt Punk does this work",
+    "start": 1297.29,
+    "duration": 8.73
+  },
+  {
+    "text": "no cuz I know I could just go to the",
+    "start": 1301.02,
+    "duration": 5.0
+  },
+  {
+    "text": "Laughing side it gives you a nice wide",
+    "start": 1306.17,
+    "duration": 6.58
+  },
+  {
+    "text": "one but it's not the purpose of this is",
+    "start": 1310.95,
+    "duration": 7.68
+  },
+  {
+    "text": "not anyway so what I went to or I'll",
+    "start": 1312.75,
+    "duration": 7.47
+  },
+  {
+    "text": "zoom out to be then I'll use this piece",
+    "start": 1318.63,
+    "duration": 3.0
+  },
+  {
+    "text": "I have it quick I think it's gonna be",
+    "start": 1320.22,
+    "duration": 6.84
+  },
+  {
+    "text": "better so when I was going so exactly",
+    "start": 1321.63,
+    "duration": 9.66
+  },
+  {
+    "text": "why why that's this particular case work",
+    "start": 1327.06,
+    "duration": 5.88
+  },
+  {
+    "text": "right so where you've got less than half",
+    "start": 1331.29,
+    "duration": 4.26
+  },
+  {
+    "text": "of your elements flagged with a minus",
+    "start": 1332.94,
+    "duration": 5.67
+  },
+  {
+    "text": "phase here we have this case with just",
+    "start": 1335.55,
+    "duration": 5.7
+  },
+  {
+    "text": "one right so intuitively I think the",
+    "start": 1338.61,
+    "duration": 5.55
+  },
+  {
+    "text": "next level version of my intuition",
+    "start": 1341.25,
+    "duration": 5.76
+  },
+  {
+    "text": "repeat that now that I see the way this",
+    "start": 1344.16,
+    "duration": 5.22
+  },
+  {
+    "text": "works is it's almost like seeing the",
+    "start": 1347.01,
+    "duration": 4.62
+  },
+  {
+    "text": "essence of turning creative destruct is",
+    "start": 1349.38,
+    "duration": 3.83
+  },
+  {
+    "text": "to credit interference is still valid",
+    "start": 1351.63,
+    "duration": 3.81
+  },
+  {
+    "text": "it's just not the way that I painted it",
+    "start": 1353.21,
+    "duration": 5.46
+  },
+  {
+    "text": "in the previous you know video and so on",
+    "start": 1355.44,
+    "duration": 11.46
+  },
+  {
+    "text": "if you think of the reason it's kind of",
+    "start": 1358.67,
+    "duration": 9.55
+  },
+  {
+    "text": "going back to the first principles the",
+    "start": 1366.9,
+    "duration": 5.52
+  },
+  {
+    "text": "reason the reason this part here works",
+    "start": 1368.22,
+    "duration": 6.99
+  },
+  {
+    "text": "right is because of interference so with",
+    "start": 1372.42,
+    "duration": 6.02
+  },
+  {
+    "text": "the hardware gates when you've got a",
+    "start": 1375.21,
+    "duration": 6.27
+  },
+  {
+    "text": "when you've got a zero and then you",
+    "start": 1378.44,
+    "duration": 6.46
+  },
+  {
+    "text": "apply a Haram art you get zero points",
+    "start": 1381.48,
+    "duration": 5.1
+  },
+  {
+    "text": "one when you've got a one and you're",
+    "start": 1384.9,
+    "duration": 4.74
+  },
+  {
+    "text": "playing harem art you get a zero minus",
+    "start": 1386.58,
+    "duration": 5.88
+  },
+  {
+    "text": "one right now what happens when you",
+    "start": 1389.64,
+    "duration": 7.08
+  },
+  {
+    "text": "apply a harm art to these element here",
+    "start": 1392.46,
+    "duration": 5.4
+  },
+  {
+    "text": "right so when you've got this your",
+    "start": 1396.72,
+    "duration": 3.72
+  },
+  {
+    "text": "points one and you apply harem art it's",
+    "start": 1397.86,
+    "duration": 4.11
+  },
+  {
+    "text": "it's like a playing aha Tamar to this",
+    "start": 1400.44,
+    "duration": 3.18
+  },
+  {
+    "text": "your book to this year and a harem are",
+    "start": 1401.97,
+    "duration": 4.47
+  },
+  {
+    "text": "to the one so you basically get 0 plus 1",
+    "start": 1403.62,
+    "duration": 6.69
+  },
+  {
+    "text": "plus 0 minus 1 so here you go so here",
+    "start": 1406.44,
+    "duration": 7.2
+  },
+  {
+    "text": "you have say here you have experience",
+    "start": 1410.31,
+    "duration": 5.94
+  },
+  {
+    "text": "right boom boom and you've got 0 what",
+    "start": 1413.64,
+    "duration": 4.44
+  },
+  {
+    "text": "you're saying so this is sort of",
+    "start": 1416.25,
+    "duration": 4.34
+  },
+  {
+    "text": "expanding and imploding kind of pattern",
+    "start": 1418.08,
+    "duration": 6.53
+  },
+  {
+    "text": "or what's interesting here and basically",
+    "start": 1420.59,
+    "duration": 7.28
+  },
+  {
+    "text": "the same a similar thing happens with",
+    "start": 1424.61,
+    "duration": 6.39
+  },
+  {
+    "text": "with multi qubit state right so if",
+    "start": 1427.87,
+    "duration": 8.83
+  },
+  {
+    "text": "you've got a if you've got zero zero and",
+    "start": 1431.0,
+    "duration": 10.29
+  },
+  {
+    "text": "you apply a hot market to to the zero",
+    "start": 1436.7,
+    "duration": 5.49
+  },
+  {
+    "text": "zero right",
+    "start": 1441.29,
+    "duration": 4.02
+  },
+  {
+    "text": "you basically have zero zero zero one",
+    "start": 1442.19,
+    "duration": 11.25
+  },
+  {
+    "text": "one zero one one and now if you if you",
+    "start": 1445.31,
+    "duration": 11.4
+  },
+  {
+    "text": "were to apply a harem art to these here",
+    "start": 1453.44,
+    "duration": 6.06
+  },
+  {
+    "text": "right it would create a similar pattern",
+    "start": 1456.71,
+    "duration": 7.5
+  },
+  {
+    "text": "of interference where so if you've got",
+    "start": 1459.5,
+    "duration": 10.14
+  },
+  {
+    "text": "zero zero zero one one zero one one this",
+    "start": 1464.21,
+    "duration": 7.5
+  },
+  {
+    "text": "harem art would give you again a zero",
+    "start": 1469.64,
+    "duration": 4.46
+  },
+  {
+    "text": "zero one one zero one one",
+    "start": 1471.71,
+    "duration": 16.8
+  },
+  {
+    "text": "these Howard here would give you is it",
+    "start": 1474.1,
+    "duration": 18.31
+  },
+  {
+    "text": "nothing with a with the two minuses in",
+    "start": 1488.51,
+    "duration": 7.32
+  },
+  {
+    "text": "the middle I think right so if you've",
+    "start": 1492.41,
+    "duration": 14.06
+  },
+  {
+    "text": "got a let me just quickly you've got",
+    "start": 1495.83,
+    "duration": 14.52
+  },
+  {
+    "text": "yeah with the two ones in the middle so",
+    "start": 1506.47,
+    "duration": 8.23
+  },
+  {
+    "text": "you've got a like display another color",
+    "start": 1510.35,
+    "duration": 9.87
+  },
+  {
+    "text": "0 0 minus 0 1 minus 1 0 plus 1 1 so here",
+    "start": 1514.7,
+    "duration": 7.2
+  },
+  {
+    "text": "you start seeing already some",
+    "start": 1520.22,
+    "duration": 6.9
+  },
+  {
+    "text": "interference right so so these element",
+    "start": 1521.9,
+    "duration": 8.31
+  },
+  {
+    "text": "this element go away so and and this",
+    "start": 1527.12,
+    "duration": 6.27
+  },
+  {
+    "text": "goes on right now with the rest and so",
+    "start": 1530.21,
+    "duration": 7.07
+  },
+  {
+    "text": "at the end you end up with just these",
+    "start": 1533.39,
+    "duration": 9.54
+  },
+  {
+    "text": "and so well I kind of realized that",
+    "start": 1537.28,
+    "duration": 7.33
+  },
+  {
+    "text": "that's exactly the key right because",
+    "start": 1542.93,
+    "duration": 7.44
+  },
+  {
+    "text": "what you're doing here is in between",
+    "start": 1544.61,
+    "duration": 8.31
+  },
+  {
+    "text": "these two hearts operations in between",
+    "start": 1550.37,
+    "duration": 4.47
+  },
+  {
+    "text": "the Hartmann sandwich you're changing",
+    "start": 1552.92,
+    "duration": 4.02
+  },
+  {
+    "text": "you're changing the sign",
+    "start": 1554.84,
+    "duration": 4.709
+  },
+  {
+    "text": "in this case of this element which",
+    "start": 1556.94,
+    "duration": 5.729
+  },
+  {
+    "text": "basically changing the sign of the Sun",
+    "start": 1559.549,
+    "duration": 5.07
+  },
+  {
+    "text": "which basically means that you're",
+    "start": 1562.669,
+    "duration": 6.901
+  },
+  {
+    "text": "changing the sign of these so this is",
+    "start": 1564.619,
+    "duration": 8.01
+  },
+  {
+    "text": "now minus minus minus minus and so this",
+    "start": 1569.57,
+    "duration": 5.88
+  },
+  {
+    "text": "would used to be a destructive pattern",
+    "start": 1572.629,
+    "duration": 6.12
+  },
+  {
+    "text": "now it's a now it's a creative",
+    "start": 1575.45,
+    "duration": 6.75
+  },
+  {
+    "text": "interference pattern here so there's no",
+    "start": 1578.749,
+    "duration": 4.53
+  },
+  {
+    "text": "you know this note there's no",
+    "start": 1582.2,
+    "duration": 10.459
+  },
+  {
+    "text": "interference here and so the key is that",
+    "start": 1583.279,
+    "duration": 9.38
+  },
+  {
+    "text": "the because if because you you are",
+    "start": 1594.279,
+    "duration": 8.38
+  },
+  {
+    "text": "changing the sign of one of the elements",
+    "start": 1599.419,
+    "duration": 7.86
+  },
+  {
+    "text": "to be negative right this minus is",
+    "start": 1602.659,
+    "duration": 9.96
+  },
+  {
+    "text": "basically going to how to output it is",
+    "start": 1607.279,
+    "duration": 7.83
+  },
+  {
+    "text": "going to actually this is where this is",
+    "start": 1612.619,
+    "duration": 5.31
+  },
+  {
+    "text": "where you're gonna have that amplified",
+    "start": 1615.109,
+    "duration": 9.15
+  },
+  {
+    "text": "effect at the end right because your so",
+    "start": 1617.929,
+    "duration": 9.21
+  },
+  {
+    "text": "your let me clean that up",
+    "start": 1624.259,
+    "duration": 8.37
+  },
+  {
+    "text": "so you're the kid let's let's do the",
+    "start": 1627.139,
+    "duration": 10.051
+  },
+  {
+    "text": "case of this three and right it's it's a",
+    "start": 1632.629,
+    "duration": 10.05
+  },
+  {
+    "text": "bigger so this particular case this",
+    "start": 1637.19,
+    "duration": 7.099
+  },
+  {
+    "text": "particular element has been negated so",
+    "start": 1642.679,
+    "duration": 4.11
+  },
+  {
+    "text": "this is gonna explode into a negated",
+    "start": 1644.289,
+    "duration": 6.151
+  },
+  {
+    "text": "version of of that superposition right",
+    "start": 1646.789,
+    "duration": 6.651
+  },
+  {
+    "text": "etc and so when you get to minus 1 1 1",
+    "start": 1650.44,
+    "duration": 6.549
+  },
+  {
+    "text": "this element it's intuitively",
+    "start": 1653.44,
+    "duration": 5.859
+  },
+  {
+    "text": "if you've - this one in here so",
+    "start": 1656.989,
+    "duration": 8.101
+  },
+  {
+    "text": "intuitively this element will or",
+    "start": 1659.299,
+    "duration": 8.07
+  },
+  {
+    "text": "basically you know constructively",
+    "start": 1665.09,
+    "duration": 8.459
+  },
+  {
+    "text": "interfere with that yeah I think that's",
+    "start": 1667.369,
+    "duration": 7.951
+  },
+  {
+    "text": "I think that's the that's the idea but",
+    "start": 1673.549,
+    "duration": 4.95
+  },
+  {
+    "text": "maybe let's do this back let's do this",
+    "start": 1675.32,
+    "duration": 8.25
+  },
+  {
+    "text": "with because the rest the rest should",
+    "start": 1678.499,
+    "duration": 7.321
+  },
+  {
+    "text": "behave the same the rest behaves the",
+    "start": 1683.57,
+    "duration": 4.11
+  },
+  {
+    "text": "same right",
+    "start": 1685.82,
+    "duration": 3.45
+  },
+  {
+    "text": "and so there's gonna be a bunch of",
+    "start": 1687.68,
+    "duration": 4.68
+  },
+  {
+    "text": "things canceling out but because you",
+    "start": 1689.27,
+    "duration": 5.61
+  },
+  {
+    "text": "have negated that you're now creating",
+    "start": 1692.36,
+    "duration": 10.64
+  },
+  {
+    "text": "some additional amplifications and so",
+    "start": 1694.88,
+    "duration": 13.11
+  },
+  {
+    "text": "the more elements you flag if you would",
+    "start": 1703.0,
+    "duration": 7.18
+  },
+  {
+    "text": "now fly this one as well then this",
+    "start": 1707.99,
+    "duration": 7.26
+  },
+  {
+    "text": "negativity would also go there I think",
+    "start": 1710.18,
+    "duration": 9.45
+  },
+  {
+    "text": "that's the that's a better way that's a",
+    "start": 1715.25,
+    "duration": 5.7
+  },
+  {
+    "text": "better way to see it is that you've",
+    "start": 1719.63,
+    "duration": 3.89
+  },
+  {
+    "text": "introduced these negativity in here",
+    "start": 1720.95,
+    "duration": 5.91
+  },
+  {
+    "text": "inside your operation and and inside",
+    "start": 1723.52,
+    "duration": 5.01
+  },
+  {
+    "text": "your about identification and that",
+    "start": 1726.86,
+    "duration": 6.27
+  },
+  {
+    "text": "basically gives that in fact that I",
+    "start": 1728.53,
+    "duration": 7.63
+  },
+  {
+    "text": "think that should also explain the case",
+    "start": 1733.13,
+    "duration": 10.47
+  },
+  {
+    "text": "for when you when you do more than when",
+    "start": 1736.16,
+    "duration": 10.14
+  },
+  {
+    "text": "you negate the face of more than half",
+    "start": 1743.6,
+    "duration": 7.97
+  },
+  {
+    "text": "the elements that's the way let's twist",
+    "start": 1746.3,
+    "duration": 7.8
+  },
+  {
+    "text": "Ashworth took you in case because",
+    "start": 1751.57,
+    "duration": 8.98
+  },
+  {
+    "text": "because this should be nothing let's",
+    "start": 1754.1,
+    "duration": 8.84
+  },
+  {
+    "text": "have a cheat sheet for a second here so",
+    "start": 1760.55,
+    "duration": 7.68
+  },
+  {
+    "text": "for the 0/0 case we've got 0 0 0 1 1 0 1",
+    "start": 1762.94,
+    "duration": 9.61
+  },
+  {
+    "text": "1 for the 0 1 case we've got 0 0 - 0 1",
+    "start": 1768.23,
+    "duration": 9.59
+  },
+  {
+    "text": "minus 1 0 1 1 for the ones your case",
+    "start": 1772.55,
+    "duration": 10.89
+  },
+  {
+    "text": "we've got once your case we've got",
+    "start": 1777.82,
+    "duration": 15.13
+  },
+  {
+    "text": "basically yeah 0 0 0 1 minus 1 0 minus 1",
+    "start": 1783.44,
+    "duration": 14.33
+  },
+  {
+    "text": "1 and for the one case for the 1 1 case",
+    "start": 1792.95,
+    "duration": 13.8
+  },
+  {
+    "text": "you've got I think it's basically for a",
+    "start": 1797.77,
+    "duration": 11.49
+  },
+  {
+    "text": "second",
+    "start": 1806.75,
+    "duration": 2.51
+  },
+  {
+    "text": "this is really easy and for this year",
+    "start": 1810.99,
+    "duration": 7.6
+  },
+  {
+    "text": "line it's the same I know sorry for the",
+    "start": 1814.06,
+    "duration": 6.9
+  },
+  {
+    "text": "0 1 is 0 1 1 1",
+    "start": 1818.59,
+    "duration": 4.5
+  },
+  {
+    "text": "I was gonna say cuz I would break my",
+    "start": 1820.96,
+    "duration": 7.38
+  },
+  {
+    "text": "intuition here 0 1 1 1 and for the 1 1",
+    "start": 1823.09,
+    "duration": 9.96
+  },
+  {
+    "text": "case is 0 0 - 0 1 minus 1 0 1 1 so this",
+    "start": 1828.34,
+    "duration": 8.55
+  },
+  {
+    "text": "is the cheat sheet so to say officer",
+    "start": 1833.05,
+    "duration": 9.39
+  },
+  {
+    "text": "propositions now now what happens is",
+    "start": 1836.89,
+    "duration": 8.19
+  },
+  {
+    "text": "you've got your initials for position to",
+    "start": 1842.44,
+    "duration": 10.49
+  },
+  {
+    "text": "be you see it your city 0 0 right and",
+    "start": 1845.08,
+    "duration": 11.7
+  },
+  {
+    "text": "now say you you we're gonna face for",
+    "start": 1852.93,
+    "duration": 7.03
+  },
+  {
+    "text": "example 2 0 1 element right so we're",
+    "start": 1856.78,
+    "duration": 4.95
+  },
+  {
+    "text": "gonna face is here 1 element by doing",
+    "start": 1859.96,
+    "duration": 6.69
+  },
+  {
+    "text": "these so now you can see place a face",
+    "start": 1861.73,
+    "duration": 14.72
+  },
+  {
+    "text": "change in here now if you pay attention",
+    "start": 1866.65,
+    "duration": 12.93
+  },
+  {
+    "text": "actually that's the easiest example",
+    "start": 1876.45,
+    "duration": 6.43
+  },
+  {
+    "text": "probably because you see that for each",
+    "start": 1879.58,
+    "duration": 6.09
+  },
+  {
+    "text": "so this is your kind of starting point",
+    "start": 1882.88,
+    "duration": 9.39
+  },
+  {
+    "text": "right so for each of these elements for",
+    "start": 1885.67,
+    "duration": 8.49
+  },
+  {
+    "text": "each of the elements with the exception",
+    "start": 1892.27,
+    "duration": 7.77
+  },
+  {
+    "text": "of the 0 0 this always account a counter",
+    "start": 1894.16,
+    "duration": 7.74
+  },
+  {
+    "text": "a negative and a negated counterpart",
+    "start": 1900.04,
+    "duration": 7.23
+  },
+  {
+    "text": "right so so we've got 2 positives 4 0 1",
+    "start": 1901.9,
+    "duration": 12.38
+  },
+  {
+    "text": "and 2 negatives 4 0 1 and we've gone to",
+    "start": 1907.27,
+    "duration": 10.41
+  },
+  {
+    "text": "positive 4 1 0 2 negatives 4 1 0 and",
+    "start": 1914.28,
+    "duration": 7.57
+  },
+  {
+    "text": "we've got so forth right positive 4 0 4",
+    "start": 1917.68,
+    "duration": 7.89
+  },
+  {
+    "text": "1 1 2 and 2 negative but the the 0 0",
+    "start": 1921.85,
+    "duration": 5.61
+  },
+  {
+    "text": "element is the only one that is positive",
+    "start": 1925.57,
+    "duration": 9.81
+  },
+  {
+    "text": "and so and now what you're doing with or",
+    "start": 1927.46,
+    "duration": 11.52
+  },
+  {
+    "text": "doing with the amplitude amplification",
+    "start": 1935.38,
+    "duration": 5.39
+  },
+  {
+    "text": "here is",
+    "start": 1938.98,
+    "duration": 9.829
+  },
+  {
+    "text": "we're basically negating we're basically",
+    "start": 1940.77,
+    "duration": 17.34
+  },
+  {
+    "text": "negating this this this guy here so this",
+    "start": 1948.809,
+    "duration": 14.49
+  },
+  {
+    "text": "is now gonna be negated so what does",
+    "start": 1958.11,
+    "duration": 15.77
+  },
+  {
+    "text": "this mean the fact that this is negated",
+    "start": 1963.299,
+    "duration": 10.581
+  },
+  {
+    "text": "right in a second is not only that this",
+    "start": 1974.059,
+    "duration": 12.941
+  },
+  {
+    "text": "is negated but this element here is is",
+    "start": 1981.96,
+    "duration": 8.43
+  },
+  {
+    "text": "originally negated as well before the",
+    "start": 1987.0,
+    "duration": 4.86
+  },
+  {
+    "text": "amplitude purification that's the point",
+    "start": 1990.39,
+    "duration": 3.72
+  },
+  {
+    "text": "because now when we're back here this is",
+    "start": 1991.86,
+    "duration": 4.47
+  },
+  {
+    "text": "not anymore the zeros your seed right",
+    "start": 1994.11,
+    "duration": 6.15
+  },
+  {
+    "text": "it's something else already it's a calm",
+    "start": 1996.33,
+    "duration": 6.18
+  },
+  {
+    "text": "it's a more complicated seed that's",
+    "start": 2000.26,
+    "duration": 3.72
+  },
+  {
+    "text": "actually a superposition meaning of",
+    "start": 2002.51,
+    "duration": 3.019
+  },
+  {
+    "text": "itself",
+    "start": 2003.98,
+    "duration": 7.1
+  },
+  {
+    "text": "mmm but intuitively you could think of",
+    "start": 2005.529,
+    "duration": 5.551
+  },
+  {
+    "text": "could you think of this intuitively as",
+    "start": 2014.289,
+    "duration": 6.031
+  },
+  {
+    "text": "saying that you're gonna need gate the",
+    "start": 2016.789,
+    "duration": 10.5
+  },
+  {
+    "text": "zero one everywhere that wouldn't mean",
+    "start": 2020.32,
+    "duration": 13.359
+  },
+  {
+    "text": "anything right or that you keep this",
+    "start": 2027.289,
+    "duration": 14.971
+  },
+  {
+    "text": "your one positive no how would you",
+    "start": 2033.679,
+    "duration": 11.13
+  },
+  {
+    "text": "intuitively think about this because I'm",
+    "start": 2042.26,
+    "duration": 11.7
+  },
+  {
+    "text": "not far away from that I think I mean",
+    "start": 2044.809,
+    "duration": 15.211
+  },
+  {
+    "text": "you could essentially seed us while",
+    "start": 2053.96,
+    "duration": 9.77
+  },
+  {
+    "text": "you've negated this whole thing here now",
+    "start": 2060.02,
+    "duration": 7.23
+  },
+  {
+    "text": "so that's the first thing",
+    "start": 2063.73,
+    "duration": 6.599
+  },
+  {
+    "text": "[Music]",
+    "start": 2067.25,
+    "duration": 3.079
+  },
+  {
+    "text": "ah but you've also negated these Ryne",
+    "start": 2071.0,
+    "duration": 10.549
+  },
+  {
+    "text": "right",
+    "start": 2079.45,
+    "duration": 10.51
+  },
+  {
+    "text": "could it be no no no no that's not I",
+    "start": 2081.549,
+    "duration": 12.79
+  },
+  {
+    "text": "think the right way to see it or is it",
+    "start": 2089.96,
+    "duration": 6.99
+  },
+  {
+    "text": "it is wait a second I think that works",
+    "start": 2094.339,
+    "duration": 5.22
+  },
+  {
+    "text": "this means this is minus minus this is",
+    "start": 2096.95,
+    "duration": 9.45
+  },
+  {
+    "text": "plus plus and now you've got and now",
+    "start": 2099.559,
+    "duration": 9.841
+  },
+  {
+    "text": "you've got a negative and a negative",
+    "start": 2106.4,
+    "duration": 5.639
+  },
+  {
+    "text": "element for zero zero and a positive and",
+    "start": 2109.4,
+    "duration": 7.29
+  },
+  {
+    "text": "a positive so they cancel out and you've",
+    "start": 2112.039,
+    "duration": 10.701
+  },
+  {
+    "text": "got a four one zero you've got negative",
+    "start": 2116.69,
+    "duration": 11.07
+  },
+  {
+    "text": "positive positive negative negative four",
+    "start": 2122.74,
+    "duration": 7.329
+  },
+  {
+    "text": "one one negative four one one positive",
+    "start": 2127.76,
+    "duration": 4.62
+  },
+  {
+    "text": "for one posit for one that works that",
+    "start": 2130.069,
+    "duration": 6.391
+  },
+  {
+    "text": "works that works look look look look M 0",
+    "start": 2132.38,
+    "duration": 7.11
+  },
+  {
+    "text": "1 it's all over the place negative that",
+    "start": 2136.46,
+    "duration": 5.27
+  },
+  {
+    "text": "works that's nice",
+    "start": 2139.49,
+    "duration": 5.03
+  },
+  {
+    "text": "so this is positive this is positive",
+    "start": 2141.73,
+    "duration": 6.52
+  },
+  {
+    "text": "this is positive this is positive yeah",
+    "start": 2144.52,
+    "duration": 8.049
+  },
+  {
+    "text": "cool I'm happy umm that's a nice way to",
+    "start": 2148.25,
+    "duration": 10.619
+  },
+  {
+    "text": "see it I'm not curious to see if that",
+    "start": 2152.569,
+    "duration": 8.431
+  },
+  {
+    "text": "really scales though but I'm gonna leave",
+    "start": 2158.869,
+    "duration": 4.531
+  },
+  {
+    "text": "that for the next video so this is my",
+    "start": 2161.0,
+    "duration": 5.76
+  },
+  {
+    "text": "next this is my sort of where my next",
+    "start": 2163.4,
+    "duration": 5.82
+  },
+  {
+    "text": "ideas are going for intuitively",
+    "start": 2166.76,
+    "duration": 5.339
+  },
+  {
+    "text": "understanding Kurvers algorithm it's",
+    "start": 2169.22,
+    "duration": 5.19
+  },
+  {
+    "text": "basically that shuffling of positive and",
+    "start": 2172.099,
+    "duration": 3.891
+  },
+  {
+    "text": "negative uncertainty it's not about like",
+    "start": 2174.41,
+    "duration": 3.869
+  },
+  {
+    "text": "think my previous update was a bit",
+    "start": 2175.99,
+    "duration": 4.569
+  },
+  {
+    "text": "fluffy it was now really polished and I",
+    "start": 2178.279,
+    "duration": 4.671
+  },
+  {
+    "text": "think that's way more polished",
+    "start": 2180.559,
+    "duration": 4.98
+  },
+  {
+    "text": "so you're basically turning positive",
+    "start": 2182.95,
+    "duration": 3.31
+  },
+  {
+    "text": "constructive and destructive",
+    "start": 2185.539,
+    "duration": 2.971
+  },
+  {
+    "text": "interference constructive into",
+    "start": 2186.26,
+    "duration": 3.299
+  },
+  {
+    "text": "destructive destructive into",
+    "start": 2188.51,
+    "duration": 2.309
+  },
+  {
+    "text": "constructive interference for the right",
+    "start": 2189.559,
+    "duration": 10.301
+  },
+  {
+    "text": "elements yeah the problem is",
+    "start": 2190.819,
+    "duration": 14.231
+  },
+  {
+    "text": "that you know if you've changed the",
+    "start": 2199.86,
+    "duration": 8.81
+  },
+  {
+    "text": "faces so much that this is no longer",
+    "start": 2205.05,
+    "duration": 6.29
+  },
+  {
+    "text": "traceable back to the zero zero see",
+    "start": 2208.67,
+    "duration": 7.21
+  },
+  {
+    "text": "anyhow then then this rotation won't",
+    "start": 2211.34,
+    "duration": 7.21
+  },
+  {
+    "text": "happen at all right and and so that's",
+    "start": 2215.88,
+    "duration": 4.44
+  },
+  {
+    "text": "why you wouldn't end up with the effect",
+    "start": 2218.55,
+    "duration": 11.18
+  },
+  {
+    "text": "of crows algorithm not working and and",
+    "start": 2220.32,
+    "duration": 13.5
+  },
+  {
+    "text": "if you change yeah and I think if the",
+    "start": 2229.73,
+    "duration": 6.09
+  },
+  {
+    "text": "problem is in anything is if you change",
+    "start": 2233.82,
+    "duration": 5.31
+  },
+  {
+    "text": "more than a half of the elements in here",
+    "start": 2235.82,
+    "duration": 6.1
+  },
+  {
+    "text": "then you're kind of doing you're kind of",
+    "start": 2239.13,
+    "duration": 4.77
+  },
+  {
+    "text": "applying the same problem same concept",
+    "start": 2241.92,
+    "duration": 8.67
+  },
+  {
+    "text": "here and here for example right you'll",
+    "start": 2243.9,
+    "duration": 9.99
+  },
+  {
+    "text": "end up amplifying the stuff you didn't",
+    "start": 2250.59,
+    "duration": 5.13
+  },
+  {
+    "text": "flock that's my that's that's my next",
+    "start": 2253.89,
+    "duration": 3.15
+  },
+  {
+    "text": "video that's for the use case for the",
+    "start": 2255.72,
+    "duration": 3.69
+  },
+  {
+    "text": "next video let's let's go through the",
+    "start": 2257.04,
+    "duration": 4.41
+  },
+  {
+    "text": "step by step I needed that justice I",
+    "start": 2259.41,
+    "duration": 3.86
+  },
+  {
+    "text": "think that's good I think that's good",
+    "start": 2261.45,
+    "duration": 3.56
+  },
+  {
+    "text": "next step",
+    "start": 2263.27,
+    "duration": 6.61
+  },
+  {
+    "text": "mmm and that's a that's a neat way of",
+    "start": 2265.01,
+    "duration": 7.87
+  },
+  {
+    "text": "seeing it I like it so with the cheat",
+    "start": 2269.88,
+    "duration": 5.67
+  },
+  {
+    "text": "sheet here sort of saying yeah so here",
+    "start": 2272.88,
+    "duration": 4.53
+  },
+  {
+    "text": "you see so girls augers and does not",
+    "start": 2275.55,
+    "duration": 3.57
+  },
+  {
+    "text": "work for all the possible inputs it out",
+    "start": 2277.41,
+    "duration": 3.69
+  },
+  {
+    "text": "that you give it and and I think the",
+    "start": 2279.12,
+    "duration": 4.08
+  },
+  {
+    "text": "geometric interpretation probably covers",
+    "start": 2281.1,
+    "duration": 3.62
+  },
+  {
+    "text": "that as well I've heard people saying",
+    "start": 2283.2,
+    "duration": 6.39
+  },
+  {
+    "text": "that the geometric interpretation",
+    "start": 2284.72,
+    "duration": 6.52
+  },
+  {
+    "text": "basically tells you that you're rotating",
+    "start": 2289.59,
+    "duration": 4.29
+  },
+  {
+    "text": "past your solution so if your solution",
+    "start": 2291.24,
+    "duration": 5.13
+  },
+  {
+    "text": "vector is here and you're coming from",
+    "start": 2293.88,
+    "duration": 4.05
+  },
+  {
+    "text": "here and then you're kind of you know",
+    "start": 2296.37,
+    "duration": 4.08
+  },
+  {
+    "text": "getting close to to your ideal solution",
+    "start": 2297.93,
+    "duration": 3.12
+  },
+  {
+    "text": "vector",
+    "start": 2300.45,
+    "duration": 3.21
+  },
+  {
+    "text": "I think the way this is interpreted is",
+    "start": 2301.05,
+    "duration": 4.08
+  },
+  {
+    "text": "that it's it's kind of rotating past",
+    "start": 2303.66,
+    "duration": 3.81
+  },
+  {
+    "text": "that so you're going farther away from",
+    "start": 2305.13,
+    "duration": 5.1
+  },
+  {
+    "text": "the actual solution the same reason that",
+    "start": 2307.47,
+    "duration": 4.17
+  },
+  {
+    "text": "you're if you apply amplitude",
+    "start": 2310.23,
+    "duration": 3.33
+  },
+  {
+    "text": "amplification too many times you also",
+    "start": 2311.64,
+    "duration": 6.21
+  },
+  {
+    "text": "circle back but I like the I like the",
+    "start": 2313.56,
+    "duration": 6.12
+  },
+  {
+    "text": "interference way of think of saying",
+    "start": 2317.85,
+    "duration": 5.22
+  },
+  {
+    "text": "things I like to interference way of",
+    "start": 2319.68,
+    "duration": 7.2
+  },
+  {
+    "text": "seeing things that's nice it feels to be",
+    "start": 2323.07,
+    "duration": 5.16
+  },
+  {
+    "text": "more close to the first principles",
+    "start": 2326.88,
+    "duration": 2.57
+  },
+  {
+    "text": "really",
+    "start": 2328.23,
+    "duration": 4.32
+  },
+  {
+    "text": "although rotating is also but it's again",
+    "start": 2329.45,
+    "duration": 4.33
+  },
+  {
+    "text": "this is not a rotation",
+    "start": 2332.55,
+    "duration": 3.3
+  },
+  {
+    "text": "in all phases it's a rotation of vectors",
+    "start": 2333.78,
+    "duration": 3.93
+  },
+  {
+    "text": "and so you have to add that mathematical",
+    "start": 2335.85,
+    "duration": 3.84
+  },
+  {
+    "text": "concept in there which I know that at",
+    "start": 2337.71,
+    "duration": 3.03
+  },
+  {
+    "text": "the end them all at the end of the day",
+    "start": 2339.69,
+    "duration": 2.37
+  },
+  {
+    "text": "the model behind all these can be",
+    "start": 2340.74,
+    "duration": 2.88
+  },
+  {
+    "text": "neither expressed with vectors and",
+    "start": 2342.06,
+    "duration": 4.95
+  },
+  {
+    "text": "matrices but I'm trying to find other",
+    "start": 2343.62,
+    "duration": 6.3
+  },
+  {
+    "text": "ways to interpret the circuitry that are",
+    "start": 2347.01,
+    "duration": 5.61
+  },
+  {
+    "text": "a bit more computer science friendly I",
+    "start": 2349.92,
+    "duration": 4.86
+  },
+  {
+    "text": "think maybe not computer science but",
+    "start": 2352.62,
+    "duration": 4.65
+  },
+  {
+    "text": "actually you know street level computer",
+    "start": 2354.78,
+    "duration": 5.28
+  },
+  {
+    "text": "programmer maybe you know something a",
+    "start": 2357.27,
+    "duration": 4.25
+  },
+  {
+    "text": "bit more hands-on something to be more",
+    "start": 2360.06,
+    "duration": 3.36
+  },
+  {
+    "text": "rough around the edges you know",
+    "start": 2361.52,
+    "duration": 3.52
+  },
+  {
+    "text": "something that's not so nicely neatly",
+    "start": 2363.42,
+    "duration": 3.27
+  },
+  {
+    "text": "polished like a mathematical model which",
+    "start": 2365.04,
+    "duration": 4.65
+  },
+  {
+    "text": "is really nice but it somehow feels too",
+    "start": 2366.69,
+    "duration": 7.23
+  },
+  {
+    "text": "polished yeah okay but that's that's",
+    "start": 2369.69,
+    "duration": 6.0
+  },
+  {
+    "text": "definitely the next that's definitely",
+    "start": 2373.92,
+    "duration": 5.64
+  },
+  {
+    "text": "good good I think it seems to work it",
+    "start": 2375.69,
+    "duration": 5.22
+  },
+  {
+    "text": "really seems to work and at least it",
+    "start": 2379.56,
+    "duration": 4.77
+  },
+  {
+    "text": "explains I think it has potential to",
+    "start": 2380.91,
+    "duration": 4.65
+  },
+  {
+    "text": "explain the three different use cases",
+    "start": 2384.33,
+    "duration": 3.75
+  },
+  {
+    "text": "where your flag less than half of the",
+    "start": 2385.56,
+    "duration": 4.23
+  },
+  {
+    "text": "elements in there works that's what",
+    "start": 2388.08,
+    "duration": 4.2
+  },
+  {
+    "text": "we've seen here you've liked half of the",
+    "start": 2389.79,
+    "duration": 6.21
+  },
+  {
+    "text": "elements it doesn't work at all we've",
+    "start": 2392.28,
+    "duration": 5.64
+  },
+  {
+    "text": "also seen the reason or if like more",
+    "start": 2396.0,
+    "duration": 3.69
+  },
+  {
+    "text": "than half the elements and then yeah",
+    "start": 2397.92,
+    "duration": 5.12
+  },
+  {
+    "text": "also methods cool",
+    "start": 2399.69,
+    "duration": 3.35
+  }
+]
