@@ -10,6 +10,7 @@ import random
 from . import config
 from .utils.helpers import load_samples, save_samples, load_results, save_results, get_transcript_chunks
 from .utils.metrics import calculate_score, calculate_linearity_score, calculate_cluster_score
+from .utils.progress import SimpleProgressBar
 
 
 def run_linearity_benchmark(generations: list) -> dict:
@@ -19,20 +20,17 @@ def run_linearity_benchmark(generations: list) -> dict:
     all_scores = []
     cluster_scores = []
     
-    for i, generation in enumerate(generations):
-        if len(generation) < 100:
-            print(f"    Generation {i+1}/{len(generations)}: Skipping (too short)")
-            continue
-        
-        print(f"    Generation {i+1}/{len(generations)}...", end=" ")
-        
+    valid_gens = [g for g in generations if len(g) >= 100]
+    pbar = SimpleProgressBar(len(valid_gens), "  Linearity/Cluster")
+    
+    for i, generation in enumerate(valid_gens):
         linearity_score = calculate_linearity_score(generation)
         cluster_result = calculate_cluster_score(generation)
         
         all_scores.append(linearity_score)
         cluster_scores.append(cluster_result["cluster_score"])
         
-        print(f"linearity: {linearity_score:.1f}, cluster: {cluster_result['cluster_score']:.1f}")
+        pbar.update(suffix=f"lin:{linearity_score:.0f} clus:{cluster_result['cluster_score']:.0f}")
     
     if not all_scores:
         return {

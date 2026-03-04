@@ -8,6 +8,7 @@ import random
 from . import config
 from .utils.api import query_model
 from .utils.helpers import get_transcript_chunks, load_samples, save_samples, load_results, save_results
+from .utils.progress import SimpleProgressBar
 
 
 def run_completion_benchmark(model: str, model_name: str) -> list:
@@ -16,6 +17,7 @@ def run_completion_benchmark(model: str, model_name: str) -> list:
     
     transcript_chunks = get_transcript_chunks()
     llm_outputs = []
+    pbar = SimpleProgressBar(config.NUM_QUERIES, f"  {model_name[:15]}")
     
     for i in range(config.NUM_QUERIES):
         chunk_idx = i % len(transcript_chunks)
@@ -27,15 +29,14 @@ def run_completion_benchmark(model: str, model_name: str) -> list:
 
 Continue thinking out loud about this concept:"""
         
-        print(f"    Query {i+1}/{config.NUM_QUERIES}...", end=" ")
         output = query_model(model, prompt, config.SYSTEM_PROMPT)
         
         if output:
             llm_outputs.append(output)
-            print("✓")
         else:
-            print("✗ (failed - will retry on next run)")
+            print(" (failed)")
         
+        pbar.update(suffix="✓" if output else "✗")
         time.sleep(1)
     
     return llm_outputs
@@ -54,19 +55,17 @@ def run_zero_shot_benchmark(model: str, model_name: str) -> list:
     ]
     
     llm_outputs = []
+    pbar = SimpleProgressBar(config.NUM_QUERIES, f"  {model_name[:15]}")
     
     for i in range(config.NUM_QUERIES):
         prompt_idx = i % len(zero_shot_prompts)
         
-        print(f"    Query {i+1}/{config.NUM_QUERIES}...", end=" ")
         output = query_model(model, config.ZERO_SHOT_PROMPT, config.ZERO_SHOT_PROMPT)
         
         if output:
             llm_outputs.append(output)
-            print("✓")
-        else:
-            print("✗ (failed - will retry on next run)")
         
+        pbar.update(suffix="✓" if output else "✗")
         time.sleep(1)
     
     return llm_outputs
