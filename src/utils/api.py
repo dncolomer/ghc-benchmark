@@ -5,8 +5,8 @@ import requests
 import numpy as np
 from .. import config
 
-REQUEST_DELAY = 2.0
-ERROR_BACKOFF = [10, 30, 60, 120, 300]
+REQUEST_DELAY = 1.0
+ERROR_BACKOFF = [5, 15, 30, 60, 120]
 
 
 def query_model(model: str, prompt: str, system_prompt: str, max_retries: int = 5) -> str:
