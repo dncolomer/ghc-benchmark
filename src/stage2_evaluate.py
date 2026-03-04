@@ -129,7 +129,12 @@ def run_evaluate(models=None, reset: bool = False):
             model_results["balanced_score"] = float(balanced)
         
         if "linearly_index" in model_results and "balanced_score" in model_results:
-            combined = (model_results["balanced_score"] + model_results["linearly_index"]["raw_score"]) / 2
+            inverted_linearity = 100 - model_results["linearly_index"]["raw_score"]
+            if "cluster_index" in model_results:
+                inverted_cluster = 100 - model_results["cluster_index"]["raw_score"]
+                combined = (model_results["balanced_score"] + inverted_linearity + inverted_cluster) / 3
+            else:
+                combined = (model_results["balanced_score"] + inverted_linearity) / 2
             model_results["combined_score"] = float(combined)
         
         results[model] = model_results

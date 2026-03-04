@@ -13,20 +13,20 @@ if env_file.exists():
 API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 MODELS = [
-    "google/gemini-2.0-flash-001",
     "openai/gpt-4o-mini",
     "anthropic/claude-3-haiku",
+    "google/gemini-2.0-flash-lite-001",
     "meta-llama/llama-3.1-70b-instruct",
-    "mistralai/mistral-7b-instruct",
-    "deepseek/deepseek-chat",
-    "deepseek/deepseek-coder-v2-instruct",
-    "qwen/qwen-2.5-7b-instruct",
-    "qwen/qwen-2.5-72b-instruct",
-    "tencent/tencent-hunyuan-pro",
-    "01-ai/yi-1.5-34b-chat",
+    "meta-llama/llama-3.1-8b-instruct",
+    "mistralai/mistral-7b-instruct-v0.1",
+    "mistralai/mistral-small-creative",
+    "deepseek/deepseek-chat-v3.1",
+    "qwen/qwen-2.5-coder-32b-instruct",
+    "qwen/qwen3.5-35b-a3b",
+    "tencent/hunyuan-a13b-instruct",
 ]
 
-NUM_QUERIES = 20
+NUM_QUERIES = 5
 NUM_COMPARISONS = 50
 SAMPLES_PER_MODEL = 3
 NUM_CHUNKS = 5

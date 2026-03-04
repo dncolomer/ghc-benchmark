@@ -91,8 +91,8 @@ def run_generate(models=None, reset: bool = False):
         if model in samples and not reset:
             completion_samples = samples[model].get("completion", [])
             zero_shot_samples = samples[model].get("zero_shot", [])
-            if completion_samples and zero_shot_samples:
-                print(f"\nSkipping {model} - samples already exist")
+            if len(completion_samples) >= config.NUM_QUERIES and len(zero_shot_samples) >= config.NUM_QUERIES:
+                print(f"\nSkipping {model} - already have {len(completion_samples)} completion + {len(zero_shot_samples)} zero-shot")
                 continue
         
         print(f"\n{'='*50}")
