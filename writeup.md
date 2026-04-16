@@ -60,7 +60,7 @@ Five tasks built with the `kaggle-benchmarks` SDK. All share the same architectu
 
 Provenance: all synthetic. Zoo Task structure grounded in Patel et al. (2021). Verbal trace methodology grounded in Wurgaft et al. (2025).
 
-**Note on dataset size:** The current configuration uses a reduced item count (30 per task) to keep evaluation runs practical in terms of cost and runtime. For statistically robust results — particularly for detecting smaller effect sizes between models — these numbers should be scaled up (60–80+ items per task). The data generators support this natively; increasing the item count requires changing a single parameter per task.
+**Note on dataset size:** The current configuration uses a reduced item count (30 per task) to keep evaluation runs practical in terms of cost and runtime (~10-12 minutes per task). For statistically robust results — particularly for detecting smaller effect sizes between models — these numbers should be scaled up (60–80+ items per task). Each task file exposes `N_ITEMS` and `N_JOBS` constants at the top of the file for easy adjustment. The procedural data generators support the full range natively; scaling up requires changing a single number per task with no further code modifications.
 
 ## Technical Details
 

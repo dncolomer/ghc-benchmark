@@ -20,7 +20,18 @@ GHC uses single-prompt think-aloud protocols (Ericsson & Simon, 1993) where reas
 | 4 | Self-Interrogation Loop | 30 | Self-critique depth and whether it improves the answer |
 | 5 | Effort Calibration | 30 | Predicted vs actual difficulty, trace length adaptation |
 
-**150 items total**, all procedurally generated with verified ground truths. Each task runs in ~10-12 minutes.
+**150 items total** (default), all procedurally generated with verified ground truths. Each task runs in ~10-12 minutes.
+
+### Configuration
+
+Each task file has two constants at the top for easy tuning:
+
+```python
+N_ITEMS = 30  # Number of items to evaluate. Max available: 60-80 depending on task.
+N_JOBS = 4    # Parallel workers for evaluation.
+```
+
+For quick iteration, keep `N_ITEMS = 30`. For statistically robust, publishable results, increase to 60-80. The data generators support the full range natively — no other code changes needed.
 
 ## Structure
 
