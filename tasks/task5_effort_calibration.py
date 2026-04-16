@@ -142,7 +142,7 @@ def generate_task5_data():
             }
         )
     rng.shuffle(items)
-    return items[:10]
+    return items[:30]
 
 
 # %%

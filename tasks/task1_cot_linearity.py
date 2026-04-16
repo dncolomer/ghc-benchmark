@@ -216,7 +216,7 @@ def generate_task1_data():
         _river_crossing_puzzles() + _constraint_puzzles() + _logic_deduction_puzzles()
     )
     random.Random(42).shuffle(items)
-    return items[:10]
+    return items[:30]
 
 
 # %%

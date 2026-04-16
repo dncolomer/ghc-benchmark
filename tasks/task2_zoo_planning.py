@@ -155,7 +155,7 @@ def generate_task2_data():
                     }
                 )
                 idx += 1
-    return items[:10]
+    return items[:30]
 
 
 # %%

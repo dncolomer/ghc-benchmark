@@ -183,7 +183,7 @@ def generate_task4_data():
 
     for i, item in enumerate(base):
         item["id"] = f"si_{i + 1:03d}"
-    return base[:10]
+    return base[:30]
 
 
 # %%

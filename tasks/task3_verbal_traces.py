@@ -71,7 +71,7 @@ def generate_task3_data():
             items.append(
                 {"id": f"g24_{len(items) + 1:03d}", "numbers": list(nums), "target": 24}
             )
-    return items[:10]
+    return items[:30]
 
 
 # %%
