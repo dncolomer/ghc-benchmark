@@ -14,6 +14,15 @@ from typing import List
 import random
 from math import comb
 
+# %% [markdown]
+# ## Configuration
+# Adjust the number of items per task. Higher = more statistically robust but slower/costlier.
+# Recommended: 30 (quick iteration), 60+ (publishable results).
+
+# %%
+N_ITEMS = 30  # Number of items to evaluate. Max available: 60.
+N_JOBS = 4  # Parallel workers for evaluation.
+
 # %%
 # === SCHEMA ===
 
@@ -183,7 +192,7 @@ def generate_task4_data():
 
     for i, item in enumerate(base):
         item["id"] = f"si_{i + 1:03d}"
-    return base[:30]
+    return base[:N_ITEMS]
 
 
 # %%
@@ -273,7 +282,7 @@ def task4_self_interrogation(llm, judge_llm) -> float:
             llm=[llm],
             judge_llm=[judge_llm],
             evaluation_data=df,
-            n_jobs=4,
+            n_jobs=N_JOBS,
             timeout=240,
             remove_run_files=True,
         )

@@ -13,6 +13,15 @@ from dataclasses import dataclass
 from typing import List
 
 # %% [markdown]
+# ## Configuration
+# Adjust the number of items per task. Higher = more statistically robust but slower/costlier.
+# Recommended: 30 (quick iteration), 60+ (publishable results).
+
+# %%
+N_ITEMS = 30  # Number of items to evaluate. Max available: 60.
+N_JOBS = 4  # Parallel workers for evaluation.
+
+# %% [markdown]
 # ## Data & Schema
 # Paste the contents of ghc_data.py here (or import if uploaded as dataset).
 # For brevity we inline only what Task 1 needs.
@@ -216,7 +225,7 @@ def generate_task1_data():
         _river_crossing_puzzles() + _constraint_puzzles() + _logic_deduction_puzzles()
     )
     random.Random(42).shuffle(items)
-    return items[:30]
+    return items[:N_ITEMS]
 
 
 # %%
@@ -291,7 +300,7 @@ def task1_cot_linearity(llm, judge_llm) -> float:
             llm=[llm],
             judge_llm=[judge_llm],
             evaluation_data=df,
-            n_jobs=4,
+            n_jobs=N_JOBS,
             timeout=180,
             remove_run_files=True,
         )

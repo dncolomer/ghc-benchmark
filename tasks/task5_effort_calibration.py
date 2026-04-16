@@ -13,6 +13,15 @@ from dataclasses import dataclass
 from typing import List
 import random
 
+# %% [markdown]
+# ## Configuration
+# Adjust the number of items per task. Higher = more statistically robust but slower/costlier.
+# Recommended: 30 (quick iteration), 60+ (publishable results).
+
+# %%
+N_ITEMS = 30  # Number of items to evaluate. Max available: 80.
+N_JOBS = 4  # Parallel workers for evaluation.
+
 # %%
 # === SCHEMA ===
 
@@ -142,7 +151,7 @@ def generate_task5_data():
             }
         )
     rng.shuffle(items)
-    return items[:30]
+    return items[:N_ITEMS]
 
 
 # %%
@@ -232,7 +241,7 @@ def task5_effort_calibration(llm, judge_llm) -> float:
             llm=[llm],
             judge_llm=[judge_llm],
             evaluation_data=df,
-            n_jobs=4,
+            n_jobs=N_JOBS,
             timeout=180,
             remove_run_files=True,
         )
