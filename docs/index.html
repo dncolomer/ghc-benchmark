@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     <style>
         :root {
             --bg: #0a0a0b;
@@ -611,7 +611,7 @@
                 that includes both the solve and self-analysis instructions.
             </p>
             <div class="math-block">
-                $$P(\mathbf{y}, \mathbf{z} \mid \mathbf{p}_\text{single}) = \prod_{i=1}^{m} P(y_i \mid \mathbf{p}_\text{single}, \mathbf{y}_{<i}) \cdot \prod_{j=1}^{k} P(z_j \mid \mathbf{p}_\text{single}, \mathbf{y}, \mathbf{z}_{<j})$$
+                $$P(\mathbf{y}, \mathbf{z} \mid \mathbf{p}_{\text{single}}) = \prod_{i=1}^{m} P(y_i \mid \mathbf{p}_{\text{single}}, \mathbf{y}_{1:i-1}) \cdot \prod_{j=1}^{k} P(z_j \mid \mathbf{p}_{\text{single}}, \mathbf{y}, \mathbf{z}_{1:j-1})$$
             </div>
             <p>
                 Every CoT token is generated with full causal attention already including the
@@ -627,7 +627,7 @@
                 instruction and treats the CoT as arbitrary external text.
             </p>
             <div class="math-block">
-                $$P(\mathbf{y} \mid \mathbf{p}_\text{solve}) \quad\text{then}\quad P(\mathbf{z} \mid \mathbf{y}, \mathbf{p}_\text{solve}, \mathbf{p}_\text{analyze})$$
+                $$P(\mathbf{y} \mid \mathbf{p}_{\text{solve}}) \quad\text{then}\quad P(\mathbf{z} \mid \mathbf{y}, \mathbf{p}_{\text{solve}}, \mathbf{p}_{\text{analyze}})$$
             </div>
             <p>
                 The metacognitive analysis in Phase 2 leaks in the model's broad "critique any passage"
@@ -638,7 +638,7 @@
     </div>
 
     <div class="conclusion-box fade-in">
-        <strong>$$P_\text{single}(\mathbf{y}, \mathbf{z}) \;\neq\; P_\text{two-phase}(\mathbf{y}, \mathbf{z})$$</strong>
+        <strong>$$P_{\text{single}}(\mathbf{y}, \mathbf{z}) \;\neq\; P_{\text{two-phase}}(\mathbf{y}, \mathbf{z})$$</strong>
         <br><br>
         The single-prompt protocol forces joint optimisation under one causal prefix &mdash; where anticipation
         of self-monitoring shapes reasoning from the first token onward. The two-phase split artificially
@@ -851,8 +851,8 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Render KaTeX
-    document.addEventListener('DOMContentLoaded', () => {
+    // Render KaTeX math
+    function renderMath() {
         if (typeof renderMathInElement !== 'undefined') {
             renderMathInElement(document.body, {
                 delimiters: [
@@ -862,19 +862,9 @@
                 throwOnError: false
             });
         }
-    });
-    // Fallback for deferred script
-    window.addEventListener('load', () => {
-        if (typeof renderMathInElement !== 'undefined') {
-            renderMathInElement(document.body, {
-                delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false}
-                ],
-                throwOnError: false
-            });
-        }
-    });
+    }
+    renderMath();
+    window.addEventListener('load', renderMath);
 </script>
 
 </body>
