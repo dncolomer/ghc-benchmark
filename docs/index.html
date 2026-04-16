@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHC Benchmark — Genuine Human Cognition</title>
+    <meta name="description" content="The first metacognition benchmark that measures what LLMs actually think, not what they say they think. Single-prompt think-aloud protocols with formal mathematical grounding.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --bg-elevated: #111113;
+            --bg-card: #161618;
+            --bg-card-hover: #1c1c1f;
+            --border: #2a2a2e;
+            --border-bright: #3a3a3f;
+            --text: #e8e8ed;
+            --text-secondary: #9898a0;
+            --text-dim: #6a6a72;
+            --accent: #6366f1;
+            --accent-bright: #818cf8;
+            --accent-dim: #4f46e5;
+            --green: #22c55e;
+            --red: #ef4444;
+            --orange: #f59e0b;
+            --cyan: #06b6d4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* --- NAV --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 2rem;
+        }
+        nav .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        nav .logo {
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+        nav .logo span { color: var(--accent-bright); }
+        nav .nav-links { display: flex; gap: 2rem; }
+        nav .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav .nav-links a:hover { color: var(--text); }
+
+        /* --- HERO --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(ellipse, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-content {
+            max-width: 820px;
+            text-align: center;
+            position: relative;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--border-bright);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            background: var(--bg-elevated);
+        }
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.2rem);
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        h1 .highlight {
+            background: linear-gradient(135deg, var(--accent-bright), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 620px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.75rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: var(--accent-bright);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.3);
+        }
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text);
+            border: 1px solid var(--border-bright);
+        }
+        .btn-secondary:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-1px);
+        }
+
+        /* --- SECTIONS --- */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-bright);
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        /* --- CORE ARGUMENT --- */
+        .argument-section {
+            border-top: 1px solid var(--border);
+        }
+        .argument-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .arg-card {
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            transition: all 0.3s;
+        }
+        .arg-card:hover {
+            border-color: var(--border-bright);
+            background: var(--bg-card-hover);
+        }
+        .arg-card.wrong {
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+        .arg-card.right {
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+        .arg-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .arg-card .tag {
+            font-size: 0.65rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 100px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .arg-card.wrong .tag { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+        .arg-card.right .tag { background: rgba(34, 197, 94, 0.15); color: var(--green); }
+        .arg-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .math-block {
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.15);
+            border-radius: 10px;
+            padding: 1.25rem;
+            overflow-x: auto;
+            font-size: 0.85rem;
+            margin: 1rem 0;
+        }
+        .conclusion-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(6, 182, 212, 0.05));
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .conclusion-box strong {
+            color: var(--accent-bright);
+        }
+
+        /* --- TASKS --- */
+        .tasks-section {
+            border-top: 1px solid var(--border);
+        }
+        .tasks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 1.5rem;
+        }
+        .task-card {
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .task-card:hover {
+            border-color: var(--accent-dim);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        .task-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--cyan));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .task-card:hover::before { opacity: 1; }
+        .task-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-bright);
+            margin-bottom: 0.75rem;
+        }
+        .task-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .task-card p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            line-height: 1.7;
+        }
+        .task-items {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 1rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 100px;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+
+        /* --- METHODOLOGY --- */
+        .method-section {
+            border-top: 1px solid var(--border);
+        }
+        .method-flow {
+            display: flex;
+            gap: 0;
+            align-items: stretch;
+            margin: 2rem 0;
+        }
+        .method-step {
+            flex: 1;
+            padding: 2rem 1.5rem;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            position: relative;
+            text-align: center;
+        }
+        .method-step:first-child { border-radius: 16px 0 0 16px; }
+        .method-step:last-child { border-radius: 0 16px 16px 0; }
+        .method-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            z-index: 2;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='m12 5 7 7-7 7'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .method-step .step-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--accent-bright);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .method-step h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .method-step p {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        /* --- FRAMEWORK --- */
+        .framework-section {
+            border-top: 1px solid var(--border);
+        }
+        .framework-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 3rem;
+        }
+        .framework-box h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .pillar {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: var(--bg-elevated);
+        }
+        .pillar .icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+        }
+        .pillar h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+        .pillar p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .extensible-note {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* --- DATASET --- */
+        .dataset-section {
+            border-top: 1px solid var(--border);
+        }
+        .dataset-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .stat {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+        }
+        .stat .number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, var(--accent-bright), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat .label {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            margin-top: 0.25rem;
+            font-weight: 500;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        footer .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer p {
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: var(--accent-bright);
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
+
+        /* --- CODE --- */
+        .code-block {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            line-height: 1.8;
+            overflow-x: auto;
+            color: var(--text-secondary);
+        }
+        .code-block .kw { color: var(--accent-bright); }
+        .code-block .fn { color: var(--cyan); }
+        .code-block .str { color: var(--green); }
+        .code-block .cm { color: var(--text-dim); }
+
+        /* --- ANIMATIONS --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .argument-grid { grid-template-columns: 1fr; }
+            .tasks-grid { grid-template-columns: 1fr; }
+            .method-flow { flex-direction: column; }
+            .method-step { border-radius: 12px !important; }
+            .method-step:not(:last-child)::after { display: none; }
+            .pillars { grid-template-columns: 1fr; }
+            .dataset-stats { grid-template-columns: repeat(2, 1fr); }
+            nav .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <div class="logo">GHC<span>.</span>Benchmark</div>
+        <div class="nav-links">
+            <a href="#argument">Core Argument</a>
+            <a href="#tasks">Tasks</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#framework">Framework</a>
+            <a href="https://github.com/dncolomer/ghc-benchmark" target="_blank">GitHub</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content fade-in">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            DeepMind x Kaggle &middot; Metacognition Track
+        </div>
+        <h1>
+            Measuring What LLMs<br>
+            <span class="highlight">Actually Think</span>
+        </h1>
+        <p class="hero-subtitle">
+            The Genuine Human Cognition Benchmark. Single-prompt think-aloud protocols
+            with formal mathematical grounding. No multi-turn theater.
+        </p>
+        <div class="hero-actions">
+            <a href="#argument" class="btn btn-primary">Read the Argument</a>
+            <a href="https://github.com/dncolomer/ghc-benchmark" target="_blank" class="btn btn-secondary">
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- CORE ARGUMENT -->
+<section id="argument" class="argument-section">
+    <div class="fade-in">
+        <div class="section-label">The Core Argument</div>
+        <h2>Why the prompting protocol<br>matters mathematically</h2>
+        <p class="section-desc">
+            When evaluating an LLM's integrated cognitive capabilities, the choice between
+            single-prompt and multi-turn is not a design preference. It changes what you measure.
+            The two approaches produce provably different probability distributions.
+        </p>
+    </div>
+
+    <div class="argument-grid fade-in">
+        <div class="arg-card right">
+            <h3>Single-Prompt <span class="tag">GHC Method</span></h3>
+            <p>
+                Everything occurs in one autoregressive pass under a unified prompt prefix
+                that includes both the solve and self-analysis instructions.
+            </p>
+            <div class="math-block">
+                $$P(\mathbf{y}, \mathbf{z} \mid \mathbf{p}_\text{single}) = \prod_{i=1}^{m} P(y_i \mid \mathbf{p}_\text{single}, \mathbf{y}_{<i}) \cdot \prod_{j=1}^{k} P(z_j \mid \mathbf{p}_\text{single}, \mathbf{y}, \mathbf{z}_{<j})$$
+            </div>
+            <p>
+                Every CoT token is generated with full causal attention already including the
+                metacognitive instruction. The model optimises <strong>jointly</strong> for a solution
+                that is both correct and analysable &mdash; exactly as a real cognitive agent operates.
+            </p>
+        </div>
+
+        <div class="arg-card wrong">
+            <h3>Two-Phase <span class="tag">Confounded</span></h3>
+            <p>
+                Phase 1 generates CoT without metacognitive signal. Phase 2 appends a new
+                instruction and treats the CoT as arbitrary external text.
+            </p>
+            <div class="math-block">
+                $$P(\mathbf{y} \mid \mathbf{p}_\text{solve}) \quad\text{then}\quad P(\mathbf{z} \mid \mathbf{y}, \mathbf{p}_\text{solve}, \mathbf{p}_\text{analyze})$$
+            </div>
+            <p>
+                The metacognitive analysis in Phase 2 leaks in the model's broad "critique any passage"
+                capability learned during training &mdash; not genuine self-introspection on its own
+                reasoning process.
+            </p>
+        </div>
+    </div>
+
+    <div class="conclusion-box fade-in">
+        <strong>$$P_\text{single}(\mathbf{y}, \mathbf{z}) \;\neq\; P_\text{two-phase}(\mathbf{y}, \mathbf{z})$$</strong>
+        <br><br>
+        The single-prompt protocol forces joint optimisation under one causal prefix &mdash; where anticipation
+        of self-monitoring shapes reasoning from the first token onward. The two-phase split artificially
+        separates a process that is deeply entangled in any actual intelligent system. When the goal is to assess
+        end-to-end cognitive depth, only the single unified prompt provides the mathematically unconfounded signal.
+    </div>
+</section>
+
+<!-- TASKS -->
+<section id="tasks" class="tasks-section">
+    <div class="fade-in">
+        <div class="section-label">The Benchmark</div>
+        <h2>Five tasks probing metacognition<br>from different angles</h2>
+        <p class="section-desc">
+            Each task uses a single-prompt think-aloud protocol grounded in
+            Ericsson & Simon (1993). The model verbalizes its raw thought stream.
+            A calibrated judge analyzes the trace structure, not the final answer.
+        </p>
+    </div>
+
+    <div class="tasks-grid fade-in">
+        <div class="task-card">
+            <div class="task-num">TASK 01</div>
+            <h3>CoT Linearity Analysis</h3>
+            <p>
+                Logic puzzles scored for trace non-linearity: back-references, abandoned branches,
+                genuine self-corrections. A perfectly linear "step 1, step 2, done" trace scores low.
+                Real revision events score high.
+            </p>
+            <div class="task-items">60 items</div>
+        </div>
+
+        <div class="task-card">
+            <div class="task-num">TASK 02</div>
+            <h3>Zoo Planning + Monitoring</h3>
+            <p>
+                Adapted from the Zoo Task (Patel et al., 2021). Plan efficient routes through
+                procedurally generated zoo graphs and self-review for constraint violations &mdash;
+                all in one thought stream. 4/6/8 animals, increasing difficulty.
+            </p>
+            <div class="task-items">70 items</div>
+        </div>
+
+        <div class="task-card">
+            <div class="task-num">TASK 03</div>
+            <h3>Verbal Traces Comparison</h3>
+            <p>
+                Game of 24 puzzles (Wurgaft et al., 2025). Scored for metacognitive richness:
+                explicit subgoals, genuine stuck moments, strategy changes with reasoning,
+                real revisions vs. mechanical enumeration.
+            </p>
+            <div class="task-items">80 items</div>
+        </div>
+
+        <div class="task-card">
+            <div class="task-num">TASK 04</div>
+            <h3>Self-Interrogation Loop</h3>
+            <p>
+                Cognitive traps, logic puzzles, ambiguous questions. Solve, interrogate your own
+                reasoning for hidden assumptions and errors, revise &mdash; all in a single stream.
+                Judge scores interrogation depth and whether self-critique improved the answer.
+            </p>
+            <div class="task-items">60 items</div>
+        </div>
+
+        <div class="task-card">
+            <div class="task-num">TASK 05</div>
+            <h3>Effort Calibration</h3>
+            <p>
+                Tiered problems (easy &rarr; hard). Predict difficulty and estimated steps,
+                then solve. Does the model's trace length adapt to actual complexity?
+                Does it even know what's hard before trying?
+            </p>
+            <div class="task-items">80 items</div>
+        </div>
+    </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="methodology" class="method-section">
+    <div class="fade-in">
+        <div class="section-label">Methodology</div>
+        <h2>Every task, same architecture</h2>
+        <p class="section-desc">
+            No multi-turn. No context re-injection. One prompt in, one trace out,
+            one judgment. The entire cognitive signal is captured in a single autoregressive pass.
+        </p>
+    </div>
+
+    <div class="method-flow fade-in">
+        <div class="method-step">
+            <div class="step-num">01</div>
+            <h4>Think-Aloud Prompt</h4>
+            <p>Single unified prompt with problem + metacognitive instructions. Raw thought stream protocol.</p>
+        </div>
+        <div class="method-step">
+            <div class="step-num">02</div>
+            <h4>Model Generation</h4>
+            <p>One autoregressive pass. Joint optimisation of reasoning + self-monitoring under one causal prefix.</p>
+        </div>
+        <div class="method-step">
+            <div class="step-num">03</div>
+            <h4>Calibrated Judge</h4>
+            <p>Structured assessment with strict calibration anchors. Scores trace structure, not final answer correctness.</p>
+        </div>
+    </div>
+
+    <div class="code-block fade-in">
+        <span class="cm"># Every GHC task follows this exact pattern</span><br>
+        <span class="kw">@kbench.task</span>(<span class="str">"item_task"</span>, store_task=<span class="kw">False</span>)<br>
+        <span class="kw">def</span> <span class="fn">item_task</span>(llm, judge_llm, problem, item_id):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm"># Single prompt &mdash; think-aloud protocol</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;response = llm.<span class="fn">prompt</span>(think_aloud_preamble + problem)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm"># Structured judge with calibration anchors</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;assessment = judge_llm.<span class="fn">prompt</span>(judge_prompt + response,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schema=AssessmentDataclass)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> {<span class="str">"score"</span>: ..., <span class="str">"id"</span>: item_id, ...}
+    </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section id="framework" class="framework-section">
+    <div class="fade-in">
+        <div class="section-label">Open Framework</div>
+        <h2>A premise, not a fixed test</h2>
+    </div>
+
+    <div class="framework-box fade-in">
+        <h3>The tasks are interchangeable. The constraints are not.</h3>
+
+        <div class="pillars">
+            <div class="pillar">
+                <div class="icon">1</div>
+                <h4>Single-Prompt<br>Joint Generation</h4>
+                <p>One autoregressive pass. No multi-turn context re-injection. Joint optimisation of reasoning and metacognition.</p>
+            </div>
+            <div class="pillar">
+                <div class="icon">2</div>
+                <h4>Think-Aloud<br>Protocol</h4>
+                <p>Grounded in Ericsson & Simon (1993). Raw thought stream, not polished output. The trace IS the data.</p>
+            </div>
+            <div class="pillar">
+                <div class="icon">3</div>
+                <h4>Calibrated<br>Trace Analysis</h4>
+                <p>Judge scores trace structure with strict anchors. Measures metacognitive signatures, not answer correctness.</p>
+            </div>
+        </div>
+
+        <p class="extensible-note">
+            The five tasks presented here are initial instantiations. Any task that elicits a single-prompt
+            think-aloud trace and scores its metacognitive structure is a valid GHC task. Scientific reasoning,
+            code debugging, ethical dilemmas, creative writing with self-critique &mdash; the problem domains
+            are open for expansion. What remains fixed is the methodological guarantee: what is being measured
+            is genuine self-monitoring under joint optimisation, not post-hoc comprehension of one's own output.
+        </p>
+    </div>
+</section>
+
+<!-- DATASET -->
+<section id="dataset" class="dataset-section">
+    <div class="fade-in">
+        <div class="section-label">Dataset</div>
+        <h2>350 items, all verifiable</h2>
+    </div>
+
+    <div class="dataset-stats fade-in">
+        <div class="stat">
+            <div class="number">350</div>
+            <div class="label">Total Items</div>
+        </div>
+        <div class="stat">
+            <div class="number">5</div>
+            <div class="label">Task Types</div>
+        </div>
+        <div class="stat">
+            <div class="number">1</div>
+            <div class="label">Prompt Per Item</div>
+        </div>
+        <div class="stat">
+            <div class="number">0</div>
+            <div class="label">Multi-Turn Calls</div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <p>
+            <strong>GHC Benchmark</strong> &mdash; Genuine Human Cognition Benchmark v1<br>
+            Built for the <a href="https://www.kaggle.com/competitions/kaggle-measuring-agi" target="_blank">Google DeepMind x Kaggle "Measuring Progress Toward AGI"</a> hackathon<br>
+            Metacognition Track &middot; Uncertain Systems (e/acc) &middot; 2026
+        </p>
+        <br>
+        <p>
+            <a href="https://github.com/dncolomer/ghc-benchmark">Source Code</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Render KaTeX
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        }
+    });
+    // Fallback for deferred script
+    window.addEventListener('load', () => {
+        if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
