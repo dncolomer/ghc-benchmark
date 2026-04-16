@@ -38,19 +38,19 @@ This formal argument aligns with established methodology in human cognitive scie
 
 Five tasks built with the `kaggle-benchmarks` SDK. All share the same architecture: a single-prompt think-aloud instruction to the evaluated model, followed by a structured judge assessment with strict calibration anchors.
 
-**Task 1: CoT Linearity Analysis (60 items).** Logic puzzles (river-crossing, constraint satisfaction, deduction). The trace is scored for non-linearity: back-references, abandoned branches, self-corrections, genuine self-doubt. A perfectly linear trace scores low. A trace with real revision events scores high. Score = 100 − judge's linearity index.
+**Task 1: CoT Linearity Analysis (30 items).** Logic puzzles (river-crossing, constraint satisfaction, deduction). The trace is scored for non-linearity: back-references, abandoned branches, self-corrections, genuine self-doubt. A perfectly linear trace scores low. A trace with real revision events scores high. Score = 100 − judge's linearity index.
 
-**Task 2: Zoo Planning with Metacognitive Monitoring (70 items).** Adapted from the Zoo Task (Patel et al., 2021). Models plan routes through procedurally generated zoo graphs (4/6/8 animals, increasing difficulty). The single prompt asks the model to plan AND self-review for constraint violations — all in one thought stream. The judge scores monitoring quality, control quality, and self-awareness.
+**Task 2: Zoo Planning with Metacognitive Monitoring (30 items).** Adapted from the Zoo Task (Patel et al., 2021). Models plan routes through procedurally generated zoo graphs (4/6/8 animals, increasing difficulty). The single prompt asks the model to plan AND self-review for constraint violations — all in one thought stream. The judge scores monitoring quality, control quality, and self-awareness.
 
-**Task 3: Verbal Traces Comparison (80 items).** Game of 24 puzzles, inspired by Wurgaft et al. (2025, arXiv:2505.23931). Scored for metacognitive richness: explicit subgoals, genuine stuck moments, strategy changes with reasoning, and real revisions vs. mechanical enumeration.
+**Task 3: Verbal Traces Comparison (30 items).** Game of 24 puzzles, inspired by Wurgaft et al. (2025, arXiv:2505.23931). Scored for metacognitive richness: explicit subgoals, genuine stuck moments, strategy changes with reasoning, and real revisions vs. mechanical enumeration.
 
-**Task 4: Metacognitive Self-Interrogation (60 items).** Mixed problems including cognitive traps (bat-and-ball), logic puzzles, and ambiguous questions. The model solves, interrogates its own reasoning for hidden assumptions and errors, and revises — all in one stream. The judge scores interrogation depth and whether self-critique improved the answer.
+**Task 4: Metacognitive Self-Interrogation (30 items).** Mixed problems including cognitive traps (bat-and-ball), logic puzzles, and ambiguous questions. The model solves, interrogates its own reasoning for hidden assumptions and errors, and revises — all in one stream. The judge scores interrogation depth and whether self-critique improved the answer.
 
-**Task 5: Reasoning Effort Calibration (80 items).** Tiered problems (easy arithmetic → medium Game-of-24 → hard planning). The model predicts difficulty and estimated steps, then solves. The judge scores whether the prediction matched reality and whether trace length adapted to actual complexity.
+**Task 5: Reasoning Effort Calibration (30 items).** Tiered problems (easy arithmetic → medium Game-of-24 → hard planning). The model predicts difficulty and estimated steps, then solves. The judge scores whether the prediction matched reality and whether trace length adapted to actual complexity.
 
 ## Dataset
 
-350 items total. All procedurally generated with verified ground truths:
+150 items total (30 per task). All procedurally generated with verified ground truths:
 
 - **Logic puzzles**: constraint-satisfaction with deterministic solutions, river-crossing variants, deduction chains.
 - **Zoo graphs**: grid-based maps with BFS-computed optimal paths across three difficulty tiers.

@@ -14,13 +14,13 @@ GHC uses single-prompt think-aloud protocols (Ericsson & Simon, 1993) where reas
 
 | # | Task | Items | What It Measures |
 |---|------|-------|------------------|
-| 1 | CoT Linearity Analysis | 60 | Trace non-linearity: backtracking, revisions, genuine self-doubt |
-| 2 | Zoo Planning + Monitoring | 70 | Route planning + spontaneous constraint verification |
-| 3 | Verbal Traces (Game of 24) | 80 | Metacognitive richness: subgoals, stuck moments, strategy shifts |
-| 4 | Self-Interrogation Loop | 60 | Self-critique depth and whether it improves the answer |
-| 5 | Effort Calibration | 80 | Predicted vs actual difficulty, trace length adaptation |
+| 1 | CoT Linearity Analysis | 30 | Trace non-linearity: backtracking, revisions, genuine self-doubt |
+| 2 | Zoo Planning + Monitoring | 30 | Route planning + spontaneous constraint verification |
+| 3 | Verbal Traces (Game of 24) | 30 | Metacognitive richness: subgoals, stuck moments, strategy shifts |
+| 4 | Self-Interrogation Loop | 30 | Self-critique depth and whether it improves the answer |
+| 5 | Effort Calibration | 30 | Predicted vs actual difficulty, trace length adaptation |
 
-**350 items total**, all procedurally generated with verified ground truths.
+**150 items total**, all procedurally generated with verified ground truths. Each task runs in ~10-12 minutes.
 
 ## Structure
 
